@@ -1,10 +1,9 @@
-body {
-  margin: 0 auto;
-}
 .container {
   margin: 0 auto;
-  width: 1440px;
-  height: 798px;
+  max-width: 1440px;
+  min-height: 798px;
+  width: 100%;
+  height: auto;
   background-color: #efefef;
   padding-top: 4px;
 }
@@ -43,15 +42,13 @@ img {
 p {
   padding-left: 15px;
 }
-
 li {
   margin-bottom: 5px;
   font-size: 18px;
 }
-.firsrli{
+.ul{
   margin-top: 35px;
 }
-
 .profilefb {
   display: inline-block;
   margin-top: 15px;
