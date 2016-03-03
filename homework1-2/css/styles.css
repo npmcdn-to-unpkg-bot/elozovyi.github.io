@@ -1,11 +1,5 @@
-.container {
-    margin: 0 auto;
-    max-width: 1440px;
-    min-height: 798px;
-    width: 100%;
-    height: auto;
+body {
     background-color: #efefef;
-    padding-top: 4px;
 }
 div#resume {
     max-width: 412px;
