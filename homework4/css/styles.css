@@ -30,58 +30,26 @@ body {
 
     .contacts p {
         margin-bottom: 7px;
+        padding-left: 50%;
 
     }
 
     .contacts p:first-child {
         margin-bottom: 10px;
     }
-
-    .countries {
-        max-width: 330px;
-    }
-
     .flag {
         float: left;
     }
 
-    .flag-in {
-        background: url('../img/flags.png');
-        background-repeat: no-repeat;
-        background-position:;
-    }
-    .flag-nep {
-        background: url('../img/flags.png');
-        background-repeat: no-repeat;
-        background-position: ;
-    }
-
-    .flag-tib {
-        background: url('../img/flags.png');
-        background-repeat: no-repeat;
-        background-position: ;
-    }
-
-    .flag-but {
-        background: url('../img/flags.png');
-        background-repeat: no-repeat;
-        background-position: ;
-    }
-
-    .flag-shri {
-        background: url('../img/flags.png');
-        background-repeat: no-repeat;
-        background-position: ;
-    }
-
-    .flag-mald {
-        background: url('../img/flags.png');
-        background-repeat: no-repeat;
-        background-position: ;
-
+    .island {
+        max-width: 1060px;
+        width: 100%;
+        height: auto;
     }
 /*MENU*/
-
+    .menu {
+        background-color: #323232;
+    }
 /*SIDEBAR-LEFT*/
 
 /*SIDEBAR-RIGHT*/
