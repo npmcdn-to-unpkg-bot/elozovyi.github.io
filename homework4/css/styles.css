@@ -40,6 +40,11 @@ body {
 
 .flag {
     float: left;
+    color: #128aa7;
+}
+
+.flag a {
+    color: #128aa7;
 }
 
 .island {
@@ -48,22 +53,6 @@ body {
     height: auto;
 }
 /*MENU*/
-    /*menu ul {
-        max-width: 1060px;
-        width: 100%;
-        height: auto;
-        background-color: #323232;
-
-    }
-    menu li {
-        float: left;
-    }
-    menu a {
-        display: table-cell;
-        vertical-align: middle;
-        background-color: #323232;
-        color: #fff;
-    }*/
 .main-menu {
     padding: 0 63px 0 53px;
     list-style: none;
@@ -100,7 +89,6 @@ body {
     width: 150px;
     margin: 0;
     padding: 0;
-    list-style: none;
     background-color: #323232;
     border-top: 1px solid #000;
     display: none;
