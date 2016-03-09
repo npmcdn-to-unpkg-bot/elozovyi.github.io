@@ -30,6 +30,7 @@ body {
 
     .contacts p {
         margin-bottom: 7px;
+
     }
 
     .contacts p:first-child {
@@ -37,13 +38,48 @@ body {
     }
 
     .countries {
-
+        max-width: 330px;
     }
 
-    .flag li {
-
+    .flag {
+        float: left;
     }
 
+    .flag-in {
+        background: url('../img/flags.png');
+        background-repeat: no-repeat;
+        background-position:;
+    }
+    .flag-nep {
+        background: url('../img/flags.png');
+        background-repeat: no-repeat;
+        background-position: ;
+    }
+
+    .flag-tib {
+        background: url('../img/flags.png');
+        background-repeat: no-repeat;
+        background-position: ;
+    }
+
+    .flag-but {
+        background: url('../img/flags.png');
+        background-repeat: no-repeat;
+        background-position: ;
+    }
+
+    .flag-shri {
+        background: url('../img/flags.png');
+        background-repeat: no-repeat;
+        background-position: ;
+    }
+
+    .flag-mald {
+        background: url('../img/flags.png');
+        background-repeat: no-repeat;
+        background-position: ;
+
+    }
 /*MENU*/
 
 /*SIDEBAR-LEFT*/
