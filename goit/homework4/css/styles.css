@@ -59,6 +59,10 @@ body {
     color: #128aa7;
 }
 
+.flag a:hover {
+    text-decoration: none;
+}
+
 .island {
     display: block;
     max-width: 1060px;
