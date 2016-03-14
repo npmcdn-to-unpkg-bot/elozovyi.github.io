@@ -22,6 +22,11 @@ h2 {
     margin-bottom: 30px;
 }
 
+th {
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .success {
     width: 40px;
     font-size: 18px;
