@@ -67,7 +67,6 @@ li:nth-child(6) {
 }
 
 menu .signup {
-    /*height: 34px;*/
     border-top: 1px solid #51b1dc;
     border-left: 1px solid #4a9cd6;
     border-bottom: 1px solid #4299d2;
@@ -227,18 +226,105 @@ input.first {
 
 label {
     display: block;
+    margin: 5px 0 23px 0;
+    color: #ccc;
 }
 
-input {
+label .checkmark {
+    margin-right: 8px;
+}
+
+input.typetext {
     width: 100%;
     box-sizing: border-box;
     padding: 10px 0 10px 15px;
     border: none;
     border-bottom: 1px solid #484848;
     margin-bottom: 16px;
+    background-color: #000;
+    color: #fff;
 }
 
-input:focus {
-  border: 1px solid #1b5288;
-  box-shadow: 0 0 30px #1b5288;
+input.typetext:focus {
+    border: none;
+    border-bottom: 1px solid #6799cc;
+    background: #1b5288;
+    box-shadow: 0px 0px 10px 3px #2f7bc5, inset 0px 0px 10px 3px #1b4773;
+}
+
+button.submitdata {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: bold;
+    background: rgba(80,176,220,1);
+    background: -moz-linear-gradient(top, rgba(80,176,220,1) 0%, rgba(61,146,207,1) 41%, rgba(46,121,196,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(80,176,220,1)), color-stop(41%, rgba(61,146,207,1)), color-stop(100%, rgba(46,121,196,1)));
+    background: -webkit-linear-gradient(top, rgba(80,176,220,1) 0%, rgba(61,146,207,1) 41%, rgba(46,121,196,1) 100%);
+    background: -o-linear-gradient(top, rgba(80,176,220,1) 0%, rgba(61,146,207,1) 41%, rgba(46,121,196,1) 100%);
+    background: -ms-linear-gradient(top, rgba(80,176,220,1) 0%, rgba(61,146,207,1) 41%, rgba(46,121,196,1) 100%);
+    background: linear-gradient(to bottom, rgba(80,176,220,1) 0%, rgba(61,146,207,1) 41%, rgba(46,121,196,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#50b0dc', endColorstr='#2e79c4', GradientType=0 );
+    width: 151px;
+    height: 37px;
+    border-radius: 5px;
+    border: none;
+    border-top: 1px solid #67c6e6;
+    border-bottom: 1px solid #3686ca;
+    border-left: 1px solid #61a6e2;
+    border-right: 1px solid #5da5e0;
+}
+
+.privacy {
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 0 auto;
+    max-width: 560px;
+    max-height: 40px;
+    padding-bottom: 22px;
+}
+
+.privacy p {
+    text-align: center;
+    color: #ccc;
+}
+
+.privacy p:last-child {
+    margin-top: 8px;
+}
+
+/*PLACEHOLDER CHANGEd COLOR also WHEN FOCUS*/
+::-webkit-input-placeholder {
+   color: #ccc;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #ccc;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #ccc;
+}
+
+:-ms-input-placeholder {
+    color: #ccc;
+}
+
+input:focus::-webkit-input-placeholder {
+   color: #fff;
+}
+
+/* Firefox < 19 */
+input:focus:-moz-placeholder {
+   color: #fff;
+}
+
+/* Firefox > 19 */
+input:focus::-moz-placeholder {
+   color: #fff;
+}
+
+/* Internet Explorer 10 */
+input:focus:-ms-input-placeholder {
+   color: #fff;
 }
