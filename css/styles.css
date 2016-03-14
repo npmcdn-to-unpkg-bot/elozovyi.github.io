@@ -22,9 +22,10 @@ h2 {
     margin-bottom: 30px;
 }
 
-th {
+.table>thead>tr>th {
     font-size: 18px;
     font-weight: bold;
+    padding-left: 50px;
 }
 
 .success {
