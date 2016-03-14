@@ -1,0 +1,50 @@
+table {
+    width: 490px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+td {
+    border-right: 10px solid #000;
+    border-bottom: 10px solid #000;
+    width: 70px;
+}
+
+td:last-child {
+    border-right: none;
+}
+
+tr:nth-child(7) td:first-child,
+tr:nth-child(8) td:first-child,
+tr:last-child td:first-child {
+    border-bottom: none;
+}
+
+tr {
+    height: 70px;
+}
+
+tr:nth-child(8),
+tr:nth-child(9) {
+    height: 45px;
+}
+
+.yellow {
+    background-color: #fff54e;
+}
+
+.orange {
+    background-color: #ff590c;
+}
+
+.black {
+    background-color: #1d2924;
+}
+
+.blue {
+    background-color: #044888;
+}
+
+.square {
+    width: 60px;
+}
