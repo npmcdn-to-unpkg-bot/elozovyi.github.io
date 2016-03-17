@@ -127,17 +127,23 @@ body {
 
 /*SIDEBAR*/
 .sidebars {
-    position: relative;
+    /*position: relative;*/
+    display: table;
 }
 
 .sidebars:after {
-    content: "";
-    clear: both;
-    display: table;
+    visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
 }
 
 .sidebar-right,
 .sidebar-left {
+    display: table-cell;
+    vertical-align: top;
     color: #424c43;
     background-color: #edeef0;
     width: 100%;
@@ -149,7 +155,7 @@ body {
     /*position: absolute;*/
     min-height: 494px;
     width: 20%;
-    float: left;
+    /*float: left;*/
     border-right: 1px solid #c7cacf;
     border-left: 1px solid #c7cacf;
 }
@@ -161,7 +167,7 @@ body {
 }
 
 .sidebar-right {
-    float: left;
+    /*float: left;*/
     margin-left: -4px;
     width: 20%;
     border-left: 1px solid #c7cacf;
@@ -171,9 +177,9 @@ body {
 }
 
 .content {
-    width: 60%;
+    /*width: 60%;*/
     min-height: 100%;
-    float: left;
+    /*float: left;*/
 }
 
 .content p {
