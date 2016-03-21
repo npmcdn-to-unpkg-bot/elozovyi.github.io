@@ -116,3 +116,16 @@ form.entrance_form .enter a {
     width: 266px;
     height: 70px;
 }
+
+nav.topnav {
+    margin-top: 20px;
+    margin-left: 16px;
+    float: left;
+    border: 1px solid #bdc4c7;
+    border-radius: 10px;
+    padding: 0px 9px 2px 9px;
+}
+
+nav.topnav img{
+    margin: 3px 4px 1px 1px;
+}
