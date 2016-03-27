@@ -4,11 +4,10 @@
     src: url('../fonts/Lucida Sans Unicode Regular.ttf');
 }
 
-header {
+.wrap {
+    max-width: 912px;
     margin: 0 auto;
-    max-width: 917px;
-    width: 100%;
-    height: auto;
+    padding: 0 44px;
 }
 
 section.navbar:after {
@@ -24,7 +23,7 @@ address {
 }
 
 address p {
-    padding: 4px 0 0 0;
+    padding-top: 2px;
     color: #5e696d;
     font-size: 18px;
     letter-spacing: 0.45px;
@@ -34,8 +33,7 @@ address p {
 
 address img {
     float: left;
-    margin-left: 7px;
-    margin-top: 2px;
+    margin-left: 6px;
 }
 
 form.entrance_form {
@@ -45,19 +43,17 @@ form.entrance_form {
     border-top: 1px solid #a6c3cf;
     border-bottom: 1px solid #596d80;
     float: left;
-    margin: 19px 0px 0 16px;
-    -webkit-box-shadow: 2px 2px 2px 0px rgba(150,150,150,1);
-    -moz-box-shadow: 2px 2px 2px 0px rgba(150,150,150,1);
-    box-shadow: 2px 2px 2px 0px rgba(150,150,150,1);
-    background: rgb(31,103,135); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgba(31,103,135,1) 0%, rgba(30,99,131,1) 10%, rgba(26,88,121,1) 24%, rgba(21,76,111,1) 35%, rgba(18,68,104,1) 47%, rgba(16,62,98,1) 58%, rgba(15,59,95,1) 72%, rgba(13,54,90,1) 86%, rgba(12,51,87,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(31,103,135,1) 0%,rgba(30,99,131,1) 10%,rgba(26,88,121,1) 24%,rgba(21,76,111,1) 35%,rgba(18,68,104,1) 47%,rgba(16,62,98,1) 58%,rgba(15,59,95,1) 72%,rgba(13,54,90,1) 86%,rgba(12,51,87,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(31,103,135,1) 0%,rgba(30,99,131,1) 10%,rgba(26,88,121,1) 24%,rgba(21,76,111,1) 35%,rgba(18,68,104,1) 47%,rgba(16,62,98,1) 58%,rgba(15,59,95,1) 72%,rgba(13,54,90,1) 86%,rgba(12,51,87,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f6787', endColorstr='#0c3357',GradientType=0 ); /* IE6-9 */
+    margin: 17px 0px 0 16px;
+    background: -webkit-linear-gradient(-90deg, #206988 0%, #114165 59%, #0d3458 84%, #0c3256 100%);
+    background: -moz-linear-gradient(-90deg, #206988 0%, #114165 59%, #0d3458 84%, #0c3256 100%);
+    background: -o-linear-gradient(-90deg, #206988 0%, #114165 59%, #0d3458 84%, #0c3256 100%);
+    background: -ms-linear-gradient(-90deg, #206988 0%, #114165 59%, #0d3458 84%, #0c3256 100%);
+    background: linear-gradient(180deg, #206988 0%, #114165 59%, #0d3458 84%, #0c3256 100%);
+    box-shadow: 1px 3px 3px 0px rgba(150, 150, 150, 0.75);
 }
 
 form.entrance_form input {
-    width: 109px;
+    width: 110px;
     height: 14px;
     border: 1px solid #82949c;
     float: left;
@@ -90,6 +86,7 @@ form.entrance_form .avtorisation {
 form.entrance_form img {
     width: 14px;
     height: 18px;
+    margin-top: -1px;
 }
 
 form.entrance_form .enter {
@@ -99,8 +96,9 @@ form.entrance_form .enter {
 }
 
 form.entrance_form .enter a {
+    display: inline-block;
     padding: 0;
-    margin: 0;
+    margin: 1px -1px 0 0;
     text-decoration: none;
     color: #fff;
     font-family: "Lucida Sans Unicode", Arial, sans-serif;;
@@ -116,7 +114,7 @@ form.entrance_form p.enter a:last-child {
     color:  #bfbfbf;
     font-size: 12px;
     font-weight: 400;
-    margin-left: 17px;
+    margin-left: 19px;
     line-height: 13px;
     border-bottom: 1px solid #bfbfbf;
     text-align: left;
@@ -126,7 +124,7 @@ form.entrance_form p.enter a:last-child {
 .logotype {
 
     width: 908px;
-    height: 236px;
+    height: 237px;
     background: url("../img/logo.png") no-repeat 100% 100%;
     margin-bottom: 6px;
 }
@@ -140,39 +138,33 @@ form.entrance_form p.enter a:last-child {
 }
 
 nav.topnav {
-    margin-top: 20px;
-    margin-left: 16px;
+    margin-top: 19px;
+    margin-left: 17px;
     float: left;
     border: 1px solid #bdc4c7;
     border-radius: 10px;
-    padding: 0px 9px 2px 9px;
+    padding: 0px 13px 2px 10px;
     -webkit-box-shadow: 0px 1px 2px 0px rgba(189,196,199,1);
     -moz-box-shadow: 0px 1px 2px 0px rgba(189,196,199,1);
     box-shadow: 0px 1px 2px 0px rgba(189,196,199,1);
 }
 
 nav.topnav img {
-    margin: 3px 4px 1px 0.5px;
+    margin: 3px 4.5px 1px -0.5px;
 }
 
-nav.topnav img:first-child {
-    margin: 4px 4px 1px 0.5px;
+nav.topnav a:last-child img {
+    margin: 0 0 2px 2px;
 }
 
 /*MENU*/
-
-.wrap {
-    max-width: 910px;
-    margin: 0 auto;
-    padding-right: 7px;
-}
 
 menu {
     margin-left: -2px;
     margin-bottom: 10px;
     max-height: 35px;
     background: url("../img/menu.png") repeat-x;
-    width: 88%;
+    width: 801px;
     height: auto;
     border-right: 1px solid #0d1642;
     border-left: 1px solid #6a6f89;
@@ -630,12 +622,11 @@ select.diam-2 {
     line-height: 8px;
 }
 
-.wrapper {
-    max-width: 921px;
-    margin: 16px auto 0;
+.container {
+    margin: 16px 0 0 -2px;
 }
 
-.wrapper:after {
+.container:after {
     content: '';
     display: table;
     clear: both;
@@ -657,8 +648,8 @@ aside.left {
 main {
     width: 480px;
     height: 602px;
-    border-radius: 5px;
-    padding: 13px 23px;
+    border-radius: 3px;
+    padding: 13px 23px 12px;
     background-color:  #ffffff;
     background: -webkit-linear-gradient(90deg, rgba(35, 75, 93, 0.49) 0%, rgba(129, 150, 159, 0.49) 57%, rgba(201, 207, 209, 0.49) 100%);
     background: -moz-linear-gradient(90deg, rgba(35, 75, 93, 0.49) 0%, rgba(129, 150, 159, 0.49) 57%, rgba(201, 207, 209, 0.49) 100%);
@@ -676,7 +667,7 @@ aside ul li.header {
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: -0.2px;
-    padding: 8px 0 4px 27px;
+    padding: 7px 0 5px 28px;
     list-style: none;
 }
 
@@ -688,11 +679,9 @@ aside ul li.header.catalog-header {
 
 aside ul li.header.tyres-header {
     background: url('../img/tyre.png') no-repeat 4px 1px;
-    padding: 8px 0 5px 30px;
-    margin-left: 1px;
-    margin-right: 29px;
-    margin-bottom: 6px;
-    letter-spacing: 0.4px;
+    padding: 8px 0 5px 29px;
+    margin: 0 29px 6px 2px;
+    letter-spacing: 1px;
 }
 
 aside ul li.header.disks-header {
@@ -736,11 +725,33 @@ figure {
     width: 135px;
     float: left;
     margin-right: 32px;
-    margin-bottom: 21px;
+    margin-bottom: 22px;
 }
 
 figure:nth-child(3n) {
     margin-right: 0;
+}
+
+figure:nth-child(2) {
+    margin-right: 33px;
+}
+
+figure:nth-child(4) {
+    margin-right: 31px;
+}
+
+figure:nth-child(5) {
+    margin-right: 34px;
+}
+
+figure:nth-child(4),
+figure:nth-child(5),
+figure:nth-child(6) {
+    margin-bottom: 24px;
+}
+
+figure:nth-child(8) {
+    margin-right: 33px;
 }
 
 figcaption h2 {
@@ -790,14 +801,13 @@ figure p.price {
     font-weight: 700;
     font-family: Arial;
     color:  #114165;
-    padding-top: 3px;
-    padding-left: 15px;
-    letter-spacing: -0.28px;
+    padding-top: 2px;
+    padding-left: 21px;
+    letter-spacing: 0.5px;
 }
 
 p.price span {
     font-size: 15px;
-    padding-left: 2px;
 }
 
 aside.right ul {
@@ -859,14 +869,16 @@ aside.right ul li.choose a {
 }
 
 .sponsor {
-    max-width: 910px;
     margin: 37px auto 0;
-    padding-left: 224px;
-    /*text-align: center;*/
+    text-align: center;
 }
 
 .sponsor a {
     margin-right: 9px;
+}
+
+.sponsor a:first-child {
+    margin-left: -3px;
 }
 
 .sponsor a:nth-child(1),
@@ -889,8 +901,7 @@ aside.right ul li.choose a {
 }
 
 footer {
-    margin-top: 22px;
-    margin-right: 9px;
+    margin: 22px 3px 0 -1px;
     padding-top: 11px;
     border: 1px solid #242a3c;
     background-color:  #213a4d;
@@ -909,12 +920,12 @@ footer ul:after {
 
 footer ul li {
     float: left;
-    color:  #68757a;
+    color:  #bec6c9;
     font-size: 12px;
 }
 
 footer ul li a {
-    color:  #68757a;
+    color:  #bec6c9;
     font-family: Arial;
     font-size: 12px;
     letter-spacing: 0.5px;
