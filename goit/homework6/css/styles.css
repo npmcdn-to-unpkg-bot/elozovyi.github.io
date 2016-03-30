@@ -483,41 +483,37 @@ p.size-r {
     margin-top: 7px;
 }
 
-/*label {
+label {
     display: block;
     width: 60px;
     margin-bottom: 4px;
     font-size: 12px;
-}*/
+    font-family: 'Lucida Sans Unicode';
+    color:  #000;
+    font-weight: 400;
+    text-align: left;
+}
 
 p.season {
     padding-left: 4px;
 }
 
-form.centerform .row:nth-child(4):after {
+form.centerform .row:nth-child(4):before {
     content: '';
     display: table;
     clear: both;
 }
 
-/*input[type="checkbox"] {
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    width: 10px;
-    height: 10px;
-    margin: 0 4px 0 0;
-    background: url('../img/checkbox.png') no-repeat top left;
-}*/
-
 input[type="checkbox"] {
 	position: absolute;
 	clip: rect(0, 0, 0, 0);
 }
+
 label {
 	cursor: pointer;
 }
-label:after {
+
+label:before {
 	content: " ";
 	display: inline-block;
 	width: 10px;
@@ -526,14 +522,14 @@ label:after {
 	position: relative;
 	top: 3px;
 	margin-left: 15px;
+    margin: 0 4px 0 0;
 }
-input[type=checkbox]:checked + label:after {
+
+input[type=checkbox]:checked + label:before {
     width: 10px;
 	height: 10px;
     background: url('../img/checkbox2.png') no-repeat;
 }
-
-
 
 .centerform .search {
     margin-top: -4px;
