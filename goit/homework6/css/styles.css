@@ -520,9 +520,9 @@ label {
 label:after {
 	content: " ";
 	display: inline-block;
-	width: 17px;
-	height: 17px;
-	background: url('../img/checkbox.png');
+	width: 10px;
+	height: 10px;
+	background: url('../img/checkbox.png') no-repeat;
 	position: relative;
 	top: 3px;
 	margin-left: 15px;
