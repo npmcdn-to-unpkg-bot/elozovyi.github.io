@@ -483,12 +483,12 @@ p.size-r {
     margin-top: 7px;
 }
 
-label {
+/*label {
     display: block;
     width: 60px;
     margin-bottom: 4px;
     font-size: 12px;
-}
+}*/
 
 p.season {
     padding-left: 4px;
@@ -500,7 +500,7 @@ form.centerform .row:nth-child(4):after {
     clear: both;
 }
 
-input[type="checkbox"] {
+/*input[type="checkbox"] {
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -508,7 +508,35 @@ input[type="checkbox"] {
     height: 10px;
     margin: 0 4px 0 0;
     background: url('../img/checkbox.png') no-repeat top left;
+}*/
+
+input[type="checkbox"] {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
 }
+label {
+	cursor: pointer;
+}
+label:after {
+	content: " ";
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: url('../img/checkbox.png');
+	position: relative;
+	top: 3px;
+	margin-left: 15px;
+}
+input[type=checkbox]:checked + label:after {
+background-position: 0 -17px;
+}
+label:hover:after {
+background-position: 0 -34px;
+}
+input[type=checkbox]:checked + label:hover:after {
+background-position: 0 -51px;
+}
+
 
 .centerform .search {
     margin-top: -4px;
