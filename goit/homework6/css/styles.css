@@ -28,7 +28,7 @@ address p {
     font-size: 18px;
     letter-spacing: 0.45px;
     margin-left: 31px;
-    font-family: Arial, sans-serif;
+    font-family: Arial, "Lucida Sans Unicode", sans-serif;
 }
 
 address img {
@@ -60,7 +60,7 @@ form.entrance_form input {
     margin-left: 3px;
     margin-top: 3px;
     padding-left: 3px;
-    font-family: "Lucida Sans Unicode", sans-serif;
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
     font-size: 11px;
     border-radius: 2px;
 }
@@ -90,7 +90,7 @@ form.entrance_form img {
 }
 
 form.entrance_form .enter {
-    font-family: "Lucida Sans Unicode", sans-serif;
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
     font-size: 11px;
     color: #fff;
 }
@@ -101,7 +101,7 @@ form.entrance_form .enter a {
     margin: 1px -1px 0 0;
     text-decoration: none;
     color: #fff;
-    font-family: "Lucida Sans Unicode", Arial, sans-serif;;
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
     font-size: 11px;
     font-weight: 400;
     line-height: 23px;
@@ -192,7 +192,7 @@ menu li a {
     line-height: 26px;
     text-align: center;
     text-decoration: none;
-    font-family: "Lucida Sans Unicode", sans-serif;
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
     font-size: 14px;
     margin: 5px -27px 3px 15px;
     padding: 0px 15px 0 15px;
@@ -275,7 +275,7 @@ menu .basket span:nth-child(5) {
 }
 
 menu li span {
-    font-family: Arial;
+    font-family: Arial, "Lucida Sans Unicode", sans-serif;
     font-size: 11px;
     letter-spacing: 0.1px;
     display: inline-block;
@@ -331,7 +331,7 @@ section.forms form.leftform {
 
 form.leftform h1 {
     margin: -6px 1px 0 -21px;
-    font-family: Arial;
+    font-family: Arial, "Lucida Sans Unicode", sans-serif;
     color:  #154467;
     font-size: 12px;
     font-weight: 900;
@@ -341,7 +341,7 @@ form.leftform h1 {
 }
 
 form.leftform h2 {
-    font-family: Arial;
+    font-family: Arial, "Lucida Sans Unicode", sans-serif;
     color:  #154468;
     font-size: 10px;
     font-weight: 900;
@@ -352,7 +352,7 @@ form.leftform h2 {
 }
 
 form.leftform h3 {
-    font-family: Arial;
+    font-family: Arial, "Lucida Sans Unicode", sans-serif;
     color:  #154468;
     font-size: 10px;
     font-weight: 900;
@@ -378,7 +378,7 @@ form.leftform .row {
 .row p {
     float: left;
     width: 75px;
-    font-family: Arial;
+    font-family: Arial, "Lucida Sans Unicode", sans-serif;
     color:  #000;
     font-size: 10px;
     font-weight: 400;
@@ -439,7 +439,7 @@ select.three {
 }
 
 .search a {
-    font-family: Arial;
+    font-family: Arial, "Lucida Sans Unicode", sans-serif;
     color:  #154467;
     font-size: 14px;
     line-height: 14px;
@@ -480,7 +480,7 @@ form.centerform .row p.season {
 }
 
 .centerform h2 {
-    font-family: Arial;
+    font-family: Arial, "Lucida Sans Unicode", sans-serif;
     color:  #154467;
     font-size: 10px;
     font-weight: 900;
@@ -527,7 +527,7 @@ label {
     /*width: 60px;*/
     margin-bottom: 4px;
     font-size: 12px;
-    font-family: 'Lucida Sans Unicode';
+    font-family: 'Lucida Sans Unicode', Arial, sans-serif;
     color:  #000;
     font-weight: 400;
     text-align: left;
@@ -592,7 +592,7 @@ section.forms form.rightform {
 }
 
 form.rightform h2 {
-    font-family: Arial;
+    font-family: Arial, "Lucida Sans Unicode", sans-serif;
     color:  #154467;
     font-size: 10px;
     font-weight: 900;
@@ -674,7 +674,7 @@ select.diam-2 {
 .column-right p {
     font-size: 9px;
     line-height: 8px;
-    font-family: 'Lucida Sans Unicode';
+    font-family: 'Lucida Sans Unicode', Arial, sans-serif;
 }
 
 .column-right .diam-3,
@@ -732,7 +732,7 @@ aside ul li.header {
     margin: 3px 0 13px 0;
     border: 1px solid #79878d;
     border-radius: 12px;
-    font-family: 'Lucida Sans Unicode';
+    font-family: 'Lucida Sans Unicode', Arial, sans-serif;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: -0.2px;
@@ -786,7 +786,7 @@ aside.left ul li ul li a {
     color: #465961;
     font-size: 13px;
     letter-spacing: -0.2px;
-    font-family: 'Lucida Sans Unicode';
+    font-family: 'Lucida Sans Unicode', Arial, sans-serif;
     text-decoration: none;
 }
 
@@ -938,7 +938,7 @@ figure:nth-child(8) {
 figcaption h2 {
     color: #206988;
     font-size: 16px;
-    font-family: "Lucida Sans Unicode";
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
     text-align: center;
     padding-top: 2px;
     letter-spacing: -0.5px;
@@ -947,7 +947,7 @@ figcaption h2 {
 figcaption h3 {
     color: #1f2528;
     font-size: 14px;
-    font-family: "Lucida Sans Unicode";
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
     text-align: center;
     margin-top: -2px;
     padding-left: 7px;
@@ -998,7 +998,7 @@ aside.right ul li.header.brands-header a {
 }
 
 aside.right ul li.header.tyres-header {
-    font-family: Arial, sans-serif;
+    font-family: Arial, "Lucida Sans Unicode", sans-serif;
     margin-top: 14px;
     margin-left: 15px;
     margin-right: 21px;
@@ -1204,7 +1204,7 @@ footer ul li {
 
 footer ul li a {
     color:  #bec6c9;
-    font-family: Arial;
+    font-family: Arial, "Lucida Sans Unicode", sans-serif;
     font-size: 12px;
     letter-spacing: 0.5px;
     padding-left: 12px;
@@ -1221,7 +1221,7 @@ footer ul li:last-child a {
 }
 
 footer p.copyright {
-    font-family: Arial;
+    font-family: Arial, "Lucida Sans Unicode", sans-serif;
     color:  #7f4740;
     font-size: 10px;
     text-align: center;
