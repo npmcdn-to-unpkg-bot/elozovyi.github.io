@@ -1,0 +1,25 @@
+.wrapper {
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+#stopwatch {
+    display: inline-block;
+    font-size: 10vw;
+    line-height: 1;
+    margin-top: 100px;
+}
+
+#msec {
+    display: inline-block;
+    font-size: 5vw;
+    line-height: 1;
+    margin: 0 0 50px 30px;
+}
+
+input.btn {
+    min-height: 70px;
+    font-size: 32px;
+    font-weight: bold;
+}
