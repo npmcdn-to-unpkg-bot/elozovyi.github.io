@@ -1,31 +1,89 @@
+body {
+    background: rgb(248,255,232);
+background: -moz-radial-gradient(center, ellipse cover,  rgba(248,255,232,1) 0%, rgba(227,245,171,1) 33%, rgba(183,223,45,1) 100%);
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(248,255,232,1) 0%,rgba(227,245,171,1) 33%,rgba(183,223,45,1) 100%);
+background: radial-gradient(ellipse at center,  rgba(248,255,232,1) 0%,rgba(227,245,171,1) 33%,rgba(183,223,45,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8ffe8', endColorstr='#b7df2d',GradientType=1 );
+}
+
+#timerLog {
+    list-style: none;
+    margin-top: 30px;
+    font-size: 3vw;
+    letter-spacing: 10px;
+    font-weight: bold;
+}
+
 .wrapper {
+    vertical-align: middle;
     margin: 0 auto;
-    max-width: 1000px;
+    width: 93%;
+    height: auto;
     text-align: center;
+    padding-bottom: 50px;
 }
 
 #stopwatch {
     display: inline-block;
-    font-size: 10vw;
+    font-size: 16vw;
     line-height: 1;
     margin-top: 100px;
 }
 
 #msec {
     display: inline-block;
-    font-size: 5vw;
+    font-size: 10vw;
     line-height: 1;
     margin: 0 0 50px 30px;
 }
 
 input.btn {
-    min-height: 70px;
-    font-size: 32px;
+    max-height: 95px;
     font-weight: bold;
+    letter-spacing: 7px;
 }
 
-#timerLog {
-    list-style: none;
-    font-size: 2vw;
-    margin-top: 30px;
+input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="button"].btn-block {
+    display: inline;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    /*Phones Rules */
+    input.btn {
+        font-size: 5.5vw;
+    }
+
+    #timerLog {
+        font-size: 5vw;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /*Tablet Rules */
+    input.btn {
+        font-size: 5vw;
+    }
+
+    #timerLog {
+        font-size: 5vw;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /*Medium screens, desktops */
+    input.btn {
+        font-size: 4vw;
+    }
+
+    #timerLog {
+        font-size: 5vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    /*Large screens, wide desktops */
+    input.btn {
+        font-size: 3vw;
+    }
 }
