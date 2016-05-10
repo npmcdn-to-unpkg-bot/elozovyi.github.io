@@ -1,25 +1,73 @@
+body {
+    background: rgb(254,255,255);
+background: -moz-radial-gradient(center, ellipse cover,  rgba(254,255,255,1) 0%, rgba(221,241,249,1) 35%, rgba(160,216,239,1) 100%);
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(254,255,255,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%);
+background: radial-gradient(ellipse at center,  rgba(254,255,255,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#a0d8ef',GradientType=1 );
+
+}
+
 .wrapper {
     margin: 0 auto;
-    max-width: 1000px;
+    width: 100%;
+    height: auto;
     text-align: center;
+    padding-bottom: 50px;
+    /*border-radius: 3px 30px 3px 30px;
+    -moz-border-radius: 3px 30px 3px 30px;
+    -webkit-border-radius: 3px 30px 3px 30px;
+    border: 5px solid #c2c0c2;*/
 }
 
 #stopwatch {
     display: inline-block;
-    font-size: 10vw;
+    font-size: 18vw;
     line-height: 1;
     margin-top: 100px;
 }
 
 #msec {
     display: inline-block;
-    font-size: 5vw;
+    font-size: 12vw;
     line-height: 1;
     margin: 0 0 50px 30px;
 }
 
 input.btn {
-    min-height: 70px;
-    font-size: 32px;
+    max-height: 95px;
     font-weight: bold;
+    letter-spacing: 10px;
+}
+
+input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="button"].btn-block {
+    display: inline;
+    width: 85%;
+}
+
+@media (max-width: 767px) {
+    /*Phones Rules */
+    input.btn {
+        font-size: 6vw;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /*Tablet Rules */
+    input.btn {
+        font-size: 5vw;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /*Medium screens, desktops */
+    input.btn {
+        font-size: 4vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    /*Large screens, wide desktops */
+    input.btn {
+        font-size: 3vw;
+    }
 }
