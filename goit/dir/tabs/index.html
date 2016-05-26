@@ -3,17 +3,19 @@
     <head>
         <title></title>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
         <script src="js/script.js"></script>
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <!-- horisontal tabs -->
         <div class="tabs">
-            <ul class="tabs__caption">
-                <li class="active">Phasellus ipsum</li>
-                <li>Proin elit</li>
-                <li>Etiam </li>
+            <ul class="tabs__caption horisontal">
+                <li class="active"><a href="#">Phasellus ipsum</a></li>
+                <li><a href="#">Proin elit</a></li>
+                <li><a href="#">Etiam</a></li>
             </ul>
             <div class="tabs__content  active">
                 <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
@@ -29,9 +31,9 @@
         <!-- vertical tabs -->
         <div class="tabs  vertical">
             <ul class="tabs__caption vertical">
-                <li class="active">Phasellus ipsum</li>
-                <li>Proin elit</li>
-                <li>Etiam </li>
+                <li class="active"><a href="#">Phasellus ipsum</a></li>
+                <li><a href="#">Proin elit</a></li>
+                <li><a href="#">Etiam</a></li>
             </ul>
             <div class="tabs__content  active">
                 <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
@@ -44,5 +46,25 @@
                 <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
             </div>
         </div>
+        <!-- Tooltip -->
+        <form>
+            <fieldset>
+                <div class="tooltip">
+                    <label for="firstname">Firstname</label><input id="firstname" name="firstname">
+                    <span>Please provide your firstname.</span>
+                </div>
+                <div class="tooltip">
+                    <label for="lastname">Lastname</label>
+                    <input id="lastname" name="lastname" title="Please provide also your lastname.">
+                    <span>Please provide also your lastname.</span>
+                </div>
+                <div class="tooltip">
+                    <label for="address">Address</label>
+                    <input id="address" name="address" title="Your home or work address.">
+                    <span>Your home or work address.</span>
+                </div>
+                <button class="help-button" role="button"><span class="button-text">Show help</span></button>
+            </fieldset>
+        </form>
     </body>
 </html>
