@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 30px;
+    font-size: 14px;
+    font-family: Tahoma;
+}
+
+a {
+    color: #0094D6;
+}
+
+p {
+    padding: 7px 0;
+}
+
+.tabs__content.active {
+    display: block;
+}
+
+.tabs {
+    width: 600px;
+    margin: 0 0 30px;
+}
+
+.tabs__caption {
+    height: 35px;
+    line-height: 25px;
+    list-style: none;
+    border: 1px solid #aaaaaa;
+    background: #FFF;
+    background: #cccccc url("../img/cccccc.png") 50% 50% repeat-x;
+    border-radius: 15px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    padding-left: 7px;
+}
+
+.vertical {
+    background: none;
+    border: none;
+    border-radius: 0;
+    padding-left: 0;
+}
+
+.tabs__caption li {
+    float: left;
+    display: inline;
+    margin: 7px 5px -1px 0;
+    padding: 0 13px 1px;
+    color: #777;
+    cursor: pointer;
+    background: #F9F9F9;
+    border: 1px solid #E4E4E4;
+    border-bottom: 1px solid #F9F9F9;
+    position: relative;
+    border-top-left-radius:0;
+    border-top-right-radius:15px;
+}
+
+.tabs__caption li:hover,
+.vertical .tabs__caption li:hover {
+    color: rgba(214, 31, 0, 0.88);
+    padding: 0 13px;
+    background: rgba(255, 255, 223, 0.66);
+    border: 1px solid #A96300;
+}
+
+.tabs__caption .active {
+    color: #336635;
+    background: #EFEFEF;
+    padding: 0 13px 2px;
+    border: 1px solid #D4D4D4;
+    border-bottom: 1px solid #EFEFEF;
+    font-weight: bold;
+}
+
+.tabs__content {
+    display: none;
+    border: 1px solid #D4D4D4;
+    border-width: 0 1px 1px;
+    background: #EFEFEF;
+    padding: 0 12px;
+}
+
+.tabs__content.active {
+    display: block;
+}
+
+.tabs.vertical {
+    width: 440px;
+border-left: 160px solid #FFF;
+}
+
+.vertical .tabs__caption {
+    width: 160px;
+    float: left;
+    display: inline;
+    margin: 0 0 0 -160px;
+}
+
+.vertical .tabs__caption li {
+    padding: 0 13px;
+    margin: 0 0 1px;
+    border: 1px solid #E4E4E4;
+    border-right: 1px solid #F9F9F9;
+    width: 132px;
+    height: 25px;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 3px;
+}
+
+.vertical .tabs__caption li:hover {
+    width: 131px;
+}
+
+.vertical .tabs__caption .active {
+    width: 133px;
+    color: #336635;
+    background: #EFEFEF;
+    border: 1px solid #D4D4D4;
+    border-right: 1px solid #EFEFEF;
+    margin-right: -1px;
+}
+
+.vertical .tabs__content {
+    border-width: 1px;
+}
