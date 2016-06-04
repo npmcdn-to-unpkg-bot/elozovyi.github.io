@@ -9,21 +9,23 @@
     </head>
     <body>
         <header class="header">
-            <div class="wrapper">
-                <h1 class="logo"><a href=""><img class="logo__image" src="img/logo.png" alt=""></a></h1>
-                <div class="menu-wrapper">
-                    <div class="current-page">
-                        <a href="#" class="current-page__link">Home</a>
+            <div class="wrapper wrapper--fullwidth">
+                <div class="wrapper">
+                    <h1 class="logo"><a href=""><img class="logo__image" src="img/logo.png" alt=""></a></h1>
+                    <div class="menu-wrapper clearfix">
+                        <div class="current-page">
+                            <a href="#" class="current-page__link">Home</a>
+                        </div>
+                        <ul class="menu menu--mobile">
+                            <li class="menu__item menu__item--current"><a href="#" class="menu__link">Home</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">About</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Product</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Lorem ipsum</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Dolor sit amet</a></li>
+                        </ul>
                     </div>
-                    <ul class="menu menu--mobile">
-                        <li class="menu__item menu__item--current"><a href="#" class="menu__link">Home</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">About</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Product</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Lorem ipsum</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Dolor sit amet</a></li>
-                    </ul>
-                </div>
+                    </div>
                 <div class="slider slider--first">
                     <div class="slider__item">
                         <img class="slider__image" src="img/iphone.png" alt="" />
@@ -34,6 +36,8 @@
                         <p class="slider__text3">tibulum sit amet sapien. Nunc dignis-</p>
                         <p class="slider__text3">sim tincidunt est, et auctor turpis</p>
                         <p class="slider__text3">ornare a. Nam venenatis hendrerit est </p>
+                        <a href="" class="slider__arrow slider__arrow--left"></a>
+                        <a href="" class="slider__arrow slider__arrow--right"></a>
                     </div>
                     <ul class="slider__buttons">
                         <li></li>
@@ -41,8 +45,6 @@
                         <li></li>
                         <li></li>
                     </ul>
-                    <a href="" class="slider__arrow slider__arrow--left"></a>
-                    <a href="" class="slider__arrow slider__arrow--right"></a>
                 </div>
             </div>
         </header><!-- header -->
@@ -51,16 +53,19 @@
                 <div class="about about--settings clearfix">
                     <h3 class="about__title">About our company</h3>
                     <p class="about__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus</p>
+                    <p class="about__text about__text2">ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam</p>
                     <a href="#" class="about__link">Read more</a>
                 </div>
                 <div class="about about--talk clearfix">
                     <h3 class="about__title">About our company</h3>
                     <p class="about__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus</p>
+                    <p class="about__text about__text2">ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam</p>
                     <a href="#" class="about__link">Read more</a>
                 </div>
                 <div class="about about--music clearfix">
                     <h3 class="about__title">About our company</h3>
                     <p class="about__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus</p>
+                    <p class="about__text about__text2">ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam</p>
                     <a href="#" class="about__link">Read more</a>
                 </div>
             </div>
@@ -113,24 +118,26 @@
             </div>
         </section><!-- sponsors -->
         <section class="prefooter">
-            <div class="wrapper">
+            <div class="wrapper clearfix">
                 <div class="category">
                     <h3 class="category__title">News categories</h3>
-                    <p class="category__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                        ea commodo consequat. Duis aute irure dolor in reprehenderit</p>
+                    <p class="category__title--logo">Pingbull<span class="category__title--logotype">er</span></p>
+                    <p class="category__text--copyright">Copyright 2013, Pingbull AS</p>
+                    <p class="category__text">Nunc turpis neque, feugiat eget eleifend et,
+                    lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque
+                    vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque</p>
                 </div>
                 <div class="category">
                     <h3 class="category__title">News categories</h3>
-                    <p class="category__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                        ea commodo consequat. Duis aute irure dolor in reprehenderit</p>
+                    <p class="category__text">Nunc turpis neque, feugiat eget eleifend et,
+                    lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque
+                    vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque</p>
                 </div>
                 <div class="category">
                     <h3 class="category__title">News categories</h3>
-                    <p class="category__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                        ea commodo consequat. Duis aute irure dolor in reprehenderit</p>
+                    <p class="category__text">Nunc turpis neque, feugiat eget eleifend et,
+                    lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque
+                    vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque</p>
                 </div>
             </div>
         </section><!-- prefooter -->

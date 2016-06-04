@@ -125,7 +125,7 @@
 /*slider*/
 .slider {
     position: relative;
-    padding: 0 25px;
+    /*padding: 0 25px;*/
     font-family: "League Gothic Regular", Tahoma, Arial, sans-serif;
 }
 .slider__item {
@@ -278,6 +278,9 @@
     font-size: 16px;
     font-family: "Open Sans", Tahoma, Arial, sans-serif;
 }
+.about__text2 {
+    display: none;
+}
 .about__link {
     margin-top: 20px;
     float: right;
@@ -387,6 +390,11 @@
     color: #454545;
     font-family: "League Gothic Regular", Tahoma, Arial, sans-serif;
 }
+.category__title--logo,
+.category__title--logotype,
+.category__text--copyright {
+    display: none;
+}
 .category__text {
     font-size: 16px;
     color: #787878;
@@ -486,7 +494,7 @@
     }
 }
 
-@media (min-width: 321px) and (max-width: 768px) {
+@media (min-width: 321px) {
     .slider--first {
         padding: 65px 25px 90px 25px;
         margin-bottom: 100px;
@@ -506,8 +514,7 @@
     }
 }
 
-
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) {
     .logo {
         margin-left: 20px;
     }
@@ -576,6 +583,19 @@
         padding: 24px 30px 52px 36px;
     }
 
+    .sponsor__item {
+        width: 16%;
+        text-align: center;
+    }
+
+    .copyrights {
+        float: right;
+        margin-right: 20px;
+        padding-top: 20px;
+    }
+}
+
+@media (min-width: 768px) {
     .about-section {
         padding: 75px 0 267px;
     }
@@ -584,6 +604,9 @@
         float: left;
         margin: 0 17px;
         padding-left: 56px;
+    }
+    .about__text2 {
+        display: block;
     }
 
     .slider--content {
@@ -599,10 +622,142 @@
         padding-top: 115px;
         padding-bottom: 75px;
     }
+    .prefooter {
+        padding-right: 0;
+    }
+    .category {
+        float: left;
+        max-width: 200px;
+    }
+    .category:first-child,
+    .category:nth-child(2) {
+        margin-right: 70px;
+    }
 
+}
 
+@media (min-width: 769px) {
+    .menu--mobile {
+        float: right;
+        margin-top: 70px;
+    }
+    .menu-wrapper {
+        margin-top: 0;
+    }
+    .footer {
+        height: 115px;
+    }
+    .menu--footer {
+        display: inline-block;
+        max-width: 520px;
+        padding-top: 35px;
+    }
+    .menu--footer .menu__item {
+        margin-right: 25px;
+    }
+    .copyrights {
+        padding-top: 50px;
+    }
 
+    .updates {
+        margin-left: 230px;
+    }
+    .category {
+        max-width: 250px;
+    }
+    .category__text--copyright {
+        display: block;
+        color: #c5c5c5;
+        font-style: italic;
+        font-size: 16px;
+        font-family: Georgia, Tahoma, Arial, sans-serif;
+    }
+    .category:first-child .category__title {
+        display: none;
+    }
+    .category:first-child,
+    .category:nth-child(2) {
+        margin-right: 85px;
+    }
+    .category__title--logo,
+    .category__title--logotype {
+        display: inline-block;
+        color: #454545;
+        font-size: 48px;
+        font-family: "League Gothic Regular", Tahoma, Arial, sans-serif;
+    }
+    .category__title--logotype {
+        color: #b9b9b9;
+    }
+    .prefooter {
+        padding-bottom: 0;
+    }
+    .about-section {
+        padding: 75px 0 267px;
+    }
+    .about {
+        max-width: 165px;
+        float: left;
+        margin: 0 48px;
+        padding-left: 40px;
+    }
+    .about::before {
+        left: -10px;
+    }
 
+    .slider--content {
+        max-width: 360px;
+        float: left;
+    }
+    .updates {
+        min-width: 320px;
+        margin-top: 20px;
+        float: left;
+    }
+    .description {
+        padding-top: 115px;
+        padding-bottom: 75px;
+    }
+}
 
+@media (min-width: 769px) and (max-width: 960px) {
+    .logo {
+        float: left;
+    }
+
+}
+
+@media (min-width: 1280px) {
+    .slider__item {
+        position: relative;
+    }
+    .slider__arrow--left {
+        left: -15%;
+    }
+    .slider__arrow--right {
+        right: -15%;
+    }
+}
+
+@media (min-width: 961px) {
+    .wrapper {
+        max-width: 960px;
+    }
+    .wrapper.wrapper--fullwidth {
+        max-width: 100%;
+    }
+    .wrapper--fullwidth .slider__item {
+        margin: 0 auto;
+        max-width: 960px;
+    }
+    .slider--first {
+        padding: 100px 25px 110px 25px;
+    }
+    .slider--first .slider__buttons {
+        right: 560px;
+    }
+    .logo {
+        float: left;
+    }
 
 }
