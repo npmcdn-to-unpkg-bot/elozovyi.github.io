@@ -642,6 +642,8 @@
         margin-top: 70px;
     }
     .menu-wrapper {
+        display: inline-block;
+        margin-left: 90px;
         margin-top: 0;
     }
     .footer {
