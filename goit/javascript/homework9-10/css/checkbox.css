@@ -1,0 +1,61 @@
+/*jquery checkboxes*/
+
+.main-checkboxes {
+    width: 29%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    background: #d5eaff;
+    padding: 30px;
+}
+.niceCheck {
+width: 17px;
+height: 17px;
+display: inline-block;
+cursor: pointer;
+background: url('../img/checkbox.png');
+background-position: 0px 0px;
+}
+.niceCheck input{
+  display: none;
+}
+.niceCheckDisabled{
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  cursor: pointer;
+  background: url('../img/checkbox-disabled.png')
+}
+.niceCheckDisabled input{
+  display: none;
+}
+
+/*css checkboxes*/
+
+.css-checkbox input[type=checkbox] {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+.css-checkbox label {
+	cursor: pointer;
+}
+.css-checkbox label:after {
+	content: " ";
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: url('../img/checkbox-2.png');
+	position: relative;
+	top: 3px;
+	margin-left: 15px;
+}
+.css-checkbox input[type=checkbox]:checked + label:after {
+background-position: 0 -17px;
+}
+.css-checkbox label:hover:after {
+background-position: 0 -34px;
+}
+.css-checkbox input[type=checkbox]:checked + label:hover:after {
+background-position: 0 -51px;
+}

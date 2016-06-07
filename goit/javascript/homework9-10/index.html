@@ -1,0 +1,138 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script type="text/javascript" src="js/dropdown.js"></script>
+
+    <script src="js/jquery.jcarousel.js"></script>
+    <script src="js/carousel.js"></script>
+    <link rel="stylesheet" href="css/jscarousel.css">
+
+    <script type="text/javascript" src="js/jquery.checkbox.js"></script>
+    <link rel="stylesheet" href="css/checkbox.css">
+
+    <link rel="stylesheet" type="text/css" media="all" href="css/jquery.selectbox.css">
+    <script type="text/javascript" src="js/jquery.selectbox-0.6.1.js"></script>
+    <script src="js/selectbox.js"></script>
+
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- dropdown menu -->
+        <header>
+            <h1>Dropdown menu</h1>
+            <div class="menu_container">
+                <ul class="menu clearfix">
+                    <li class="menu_item"><a href="#">Nav 1</a></li>
+                    <li class="menu_item"><a href="#">Nav 2</a></li>
+                    <li class="menu_item submenu"><a href="#">Nav 3</a>
+                        <ul class="inner">
+                            <li class="inner-item"><a href="#">Nav 3.1</a></li>
+                            <li class="inner-item"><a href="#">Nav 3.2</a></li>
+                            <li class="inner-item"><a href="#">Nav 3.3</a></li>
+                            <li class="inner-item submenu"><a href="#">Nav 3.4</a>
+                                <ul class="inner">
+                                    <li class="menu_item inner-item"><a href="#">Nav 3.4.1</a></li>
+                                    <li class="menu_item inner-item submenu"><a href="#">Nav 3.4.2</a>
+                                        <ul class="inner">
+                                            <li class="inner-item"><a href="#">Nav 3.4.2.1</a></li>
+                                            <li class="inner-item"><a href="#">Nav 3.4.2.2</a></li>
+                                            <li class="inner-item"><a href="#">Nav 3.4.2.3</a></li>
+                                            <li class="inner-item"><a href="#">Nav 3.4.2.4</a></li>
+                                            <li class="inner-item"><a href="#">Nav 3.4.2.5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="inner-item"><a href="#">Nav 3.4.3</a></li>
+                                    <li class="inner-item"><a href="#">Nav 3.4.4</a></li>
+                                    <li class="inner-item"><a href="#">Nav 3.4.5</a></li>
+                                </ul>
+                            </li>
+                            <li class="inner-item"><a href="#">Nav 3.5</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_item"><a href="#">Nav 4</a></li>
+                    <li class="menu_item"><a href="#">Nav 5</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- carousel -->
+        <h1>Carousel</h1>
+        <div class="jcarousel-wrapper">
+            <div class="jcarousel">
+                <ul>
+                    <li><img src="img/img1.jpg" alt=""></li>
+                    <li><img src="img/img2.jpg" alt=""></li>
+                    <li><img src="img/img3.jpg" alt=""></li>
+                    <li><img src="img/img4.jpg" alt=""></li>
+                    <li><img src="img/img5.jpg" alt=""></li>
+                    <li><img src="img/img6.jpg" alt=""></li>
+                </ul>
+            </div>
+            <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+            <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+
+            <p class="jcarousel-pagination">
+
+            </p>
+        </div>
+
+        <!-- Selectboxes -->
+        <h1>jQuery custom selectboxes</h1>
+        <div class="demoTarget">
+            <select id="selectbox">
+                <option value="&#45;&#45;">Please select your favorite color</option>
+                <option value="01">Red</option>
+                <option value="02">Orange</option>
+                <option value="03">Yellow</option>
+                <option value="04">Green</option>
+                <option value="05">Blue</option>
+                <option value="06">Magenta</option>
+                <option value="07">Violet</option>
+                <option value="08">Ultra-violet</option>
+            </select>
+            <div class="clr"></div>
+        </div>
+
+        <!-- Checkboxes -->
+        <div class="main-checkboxes">
+            <h1>jQuery custom checkboxes</h1>
+            <form action="#">
+              <div>
+                <label for="ch1">label 1</label>
+                <span class="niceCheck"><input type="checkbox" name="ch1" id="ch1"/></span>
+              <div>
+                <label for="ch2">label 2</label>
+                <span class="niceCheck"><input type="checkbox" checked="checked" name="ch2" id="ch2"/></span>
+              </div>
+              <div>
+                <label for="ch3">label 3</label>
+                <span class="niceCheck"><input type="checkbox" name="ch3" id="ch3" checked="checked" disabled="disabled"/></span>
+              </div>
+            </form>
+        </div>
+        <div class="css-checkbox">
+            <h1>CSS custom checkboxes</h1>
+            <form action="#">
+                <div>
+                    <input type="checkbox" id="test-check1">
+                    <label for="test-check1">Checkbox 1:</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="test-check2">
+                    <label for="test-check2">Checkbox 2:</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="test-check3">
+                    <label for="test-check3">Checkbox 3:</label>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
