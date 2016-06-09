@@ -16,18 +16,18 @@ $(function() {
 // Tooltip
 $(function() {
 
-  var $tooltip = $('fieldset div');
+  var $tooltip = $('fieldset input');
   var $helpButton = $('button');
 
   $tooltip.mouseover(function(){
-    $(this).children('span').show('slow');
+    $(this).parent().children('span').show(50);
 
   }).mouseout(function(){
-    $(this).children('span').hide('slow');
+    $(this).parent().children('span').hide(50);
   });
 
   $helpButton.on('click', function(e) {
-    $tooltip.find('span').each(function(){
+    $('.tooltip').find('span').each(function(){
       $(this).show(700,'swing');
 
       var $el = $(this);
