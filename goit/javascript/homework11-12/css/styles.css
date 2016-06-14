@@ -108,7 +108,7 @@ body {
     margin: 0 auto;
     max-width: 350px;
     text-align: center;
-    border: 14px solid rgba(206, 206, 206, 0.61);
+    border: 14px solid rgb(206, 206, 206);
     border-radius: 10px;
 }
 .profile-wrapper h1 {
