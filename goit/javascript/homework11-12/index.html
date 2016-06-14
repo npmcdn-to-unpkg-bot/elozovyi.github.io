@@ -93,9 +93,11 @@
                 <a href="<%= profile_image_url %>" class="fancybox">
                     <img src="<%= profile_image_url %>">
                 </a>
-                <p class="number">My telephone: <%= number %></p>
-                <p class="mail">My e-mail: <%= mail %></p>
-                <p class="linkedin"><a href="<%= linkedin %>">My LinkedIn</a></p>
+                <div class="about">
+                    <p class="number"><span>My telephone: </span><%= number %></p>
+                    <p class="mail"><span>My e-mail: </span><%= mail %></p>
+                    <p class="linkedin"><a href="<%= linkedin %>">My LinkedIn</a></p>
+                </div>
             </div>
         </script>
 
