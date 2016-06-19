@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ukrainian Quiz</title>
-
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -21,9 +21,11 @@
             <h4 class="question${number}">${number + 1}. ${question}</h4>
             {{each answers}}
               <div class="checkbox">
-                <label>
-                  <input type="checkbox" class="${number}-${$index}" value="">${$value}
-                </label>
+                  <form action="">
+                      <label>
+                          <input type="checkbox" class="${number}-${$index}" value="">${$value}
+                      </label>
+                  </form>
               </div>
             {{/each}}
         </div>
