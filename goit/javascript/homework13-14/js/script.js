@@ -13,7 +13,7 @@ $(function() {
     {number: 1,
     question: "Which one of the following means 'square':",
     answers: ["kruglij - круглий", "kvadratnij - квадратний", "trikutnij - трикутний", "solodkij - солодкий", "glibokij - глибокий"],
-    weight: [1, 0, 0, 0, 0]},
+    weight: [0, 1, 0, 0, 0]},
 
     {number: 2,
     question: "Which one of the following means 'red':",
