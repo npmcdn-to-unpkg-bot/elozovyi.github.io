@@ -113,35 +113,11 @@ form {
     color: #222;
 }
 
-footer {
-    margin-top: 20px;
-    background: #f2f2f2;
-    border-top: 1px solid #e4e4e4;
-    line-height: 40px;
-    width: 100%;
-    min-height: 41px;
-
+.wrapper-image {
+    text-align: center;
 }
 
-aside.left {
-    float: left;
-}
-
-aside a {
-    text-decoration: none;
-    color: #666;
-}
-
-aside a:hover {
-    text-decoration: underline;
-}
-
-aside li {
-    padding: 0 14px 0 14px;
-    display: inline-block;
-    list-style: none;
-}
-
-aside.right {
-    float: right;
+.wrapper-image img {
+    max-height: 200px;
+    margin: 5px;
 }
