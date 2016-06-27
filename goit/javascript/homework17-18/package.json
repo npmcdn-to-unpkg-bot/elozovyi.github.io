@@ -13,6 +13,7 @@
   "author": "Eugen Lozovyi",
   "license": "ISC",
   "devDependencies": {
-    "grunt-contrib-concat": "^1.0.1"
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-uglify": "^1.0.1"
   }
 }
