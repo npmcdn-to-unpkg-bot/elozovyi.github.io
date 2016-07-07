@@ -63,9 +63,7 @@
         }
 
         $link.on('click', showModal);
-
         return this;
-
     }
 
 })(jQuery);

@@ -1,6 +1,5 @@
 $(function(){
 
-
     //JavaScript Micro-Templating
     var html = $('#profile').html();
     var data = {
