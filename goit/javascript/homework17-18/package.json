@@ -1,0 +1,19 @@
+{
+  "name": "js17-18",
+  "version": "1.0.0",
+  "description": "hometask",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://elozovyi.bitbucket.io/goit/javascript/homework17-18/"
+  },
+  "author": "Eugen Lozovyi",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-uglify": "^1.0.1"
+  }
+}
