@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ukrainian Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jasmine.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container__header">
+            <h4>Ukrainian Quiz</h4>
+            <p class="header__text">This page contains a quiz in Ukrainian
+                related to grammar and vocabulary. The test has 10 questions. It might be one or more correct answers.
+                You will see your score after submitting. This exam should be taken only
+                for fun! The level is for beginners. If you want to prepare for this test
+                go to Learn Ukrainian otherwise you can start now ^_^ Good luck!</p>
+        </div>
+        <script type="text/template" id="tmpl">
+            <div class="box">
+                <h4 class="question${number}">${number + 1}. ${question}</h4>
+                {{each answers}}
+                <div class="checkbox">
+                    <form action="">
+                        <label>
+                            <input type="checkbox" class="${number}-${$index}" value="">${$value}
+                        </label>
+                    </form>
+                </div>
+                {{/each}}
+            </div>
+        </script>
+        <div class="modal">
+            <div class="modal-close"></div>
+            <div class="modal-ornament"></div>
+            <h5>Your test score is:</h5>
+            <p class="result"></p>
+            <p class="tip">
+                <span>correct</span>
+                <span>incorrect</span>
+            </p>
+        </div>
+        <div class="overlay"></div>
+    </div>
+
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/jquery.tmpl.min.js"></script>
+    <script src="js/jasmine.js"></script>
+    <script src="js/jasmine-html.js"></script>
+    <script src="js/dist/quiztest.js"></script>
+    <script src="js/dist/script.js"></script>
+</body>
+</html>

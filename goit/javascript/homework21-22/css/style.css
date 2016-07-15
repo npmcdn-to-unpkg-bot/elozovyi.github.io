@@ -1,0 +1,225 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: linear-gradient(135deg, rgba(85,239,203,1)
+	0%,rgba(30,87,153,1) 0%,rgba(85,239,203,1) 0%,rgba(91,202,255,1) 100%);
+	font-family: Tahoma, Arial, sans-serif;
+}
+body:before {
+  content: "";
+  position: fixed;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  z-index: 100;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+  -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+  box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+}
+h5 {
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.container {
+	margin: 0 auto;
+	position: relative;
+	max-width: 900px;
+	margin-top: 20px;
+	border: 1px solid #f7f7f7;
+}
+.container__header {
+	padding: 20px;
+	text-align: center;
+	font-size: 19px;
+}
+.container h4 {
+	font-size: 20px;
+	font-weight: bold;
+}
+.container__header h4 {
+	margin-bottom: 20px;
+	letter-spacing: 10px;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.container__header {
+	margin-top: 20px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.box {
+	margin: 0 50px 30px 50px;
+}
+
+.checkbox,
+.radio {
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.checkbox label,
+.radio label {
+    min-height: 20px;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+    cursor: pointer;
+}
+.checkbox input[type=checkbox],
+.checkbox-inline input[type=checkbox],
+.radio input[type=radio],
+.radio-inline input[type=radio] {
+    position: absolute;
+    margin-top: 4px\9;
+    margin-left: -20px;
+}
+input[type=checkbox],
+input[type=radio] {
+    margin: 4px 0 0;
+    margin-top: 1px\9;
+    line-height: normal;
+}
+
+.button-wrapper {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.button {
+	max-width: 900px;
+	margin: 0 auto;
+	text-align: center;
+	flex: 1 1 auto;
+	padding: 20px;
+	border: 3px solid #f7f7f7;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+	overflow: hidden;
+	transition: .3s;
+	background: none;
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 24px;
+}
+.button:after {
+	position: absolute;
+	transition: .3s;
+	content: '';
+	width: 0;
+	left: 50%;
+	bottom: 0;
+	height: 3px;
+	background: #f7f7f7;
+}
+.button:after {
+	height: 120%;
+	left: -10%;
+	transform: skewX(15deg);
+	z-index: -1;
+}
+.button:hover {
+  cursor: pointer;
+}
+.button:hover:after {
+	width: 100%;
+	left: 0;
+}
+
+.wrong {
+	background: #FFB6AD;
+}
+
+.right {
+	background: #6AAF6A;
+}
+
+.modal {
+	overflow: hidden;
+	z-index: 2;
+	position: fixed;
+	display: none;
+	top: 30%;
+	left: 49%;
+	width: 285px;
+	height: 230px;
+	padding: 20px 10px;
+	margin-top: -100px;
+	margin-left: -150px;
+	border-radius: 20px;
+	opacity: 0;
+	background: #fff;
+}
+.modal-ornament {
+	z-index: -2;
+    position: absolute;
+    display: block;
+    top: 193px;
+    left: -50px;
+    width: 177px;
+    height: 87px;
+    background-image: url('../img/ornament.png');
+    background-position: 0 -55px;
+    transform: rotate(45deg);
+}
+.modal p.tip {
+	margin-top: 30px;
+	text-align: center;
+}
+.modal p.tip span {
+	padding: 12px;
+	margin: 5px;
+}
+.modal p.tip span:first-child {
+	background-color: #6AAF6A;
+}
+.modal p.tip span:last-child {
+	background-color: #FFB6AD;
+}
+.modal h5 {
+	margin-top: 15px;
+}
+
+.overlay {
+	z-index: 1;
+	position: fixed;
+	display:none;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	filter:alpha(opacity=80);
+	-moz-opacity:0.8;
+	opacity:0.5;
+	cursor:pointer;
+	background-color:#000;
+}
+
+.modal-close {
+	z-index: 3;
+	position: absolute;
+	display: block;
+	top: 4px;
+	left: 276px;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	background: url(../img/fancybox_sprite.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.modal-close:hover {
+	background-position: 0 -24px;
+}
+
+.result {
+	margin-top: 25px;
+	text-align: center;
+	font-size: 30px;
+}
