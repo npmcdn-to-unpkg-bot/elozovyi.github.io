@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>MVC</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>MVC</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <div class="">
-    <span>asdfadf</span>
+  <script type="text/template" id="wrapper-template">
+    <h1>My ToDo-list</h1>
+    <div class="wrapper">
+      <ol class="item-list"></ul>
     </div>
+    <div class="controlls">
+      <input type="text" class="item-value">
+      <button class="item-add">Add</button>
+    </div>
+  </script>
 
-    <script type="text/template" id="wrapper-template">
-        <div class="wrapper">
-          <ol type="1" class="item-list"></ol>
-        </div>
-        <div class="controlls">
-          <input type="text" class="item-value">
-          <button class="item-add">Add</button>
-        </div>
-    </script>
+  <script type="text/template" id="list-template">
+    <% for (var i = 0; i < data.length; i++) { %>
+    <li><%= data[i] %> <span class="item-delete">
+      <img src="img/delete.png" alt="">
+    </span></li>
+    <% }; %>
+  </script>
 
-    <script type="text/template" id="list-template">
-        <% for (var i = 0; i < data.length; i++) { %>
-        <li><%= data[i] %> <span class="item-delete">
-          <img src="img/delete.png" alt="">
-        </span></li>
-        <% }; %>
-    </script>
-
-    <script data-main="js/app" src="js/require.js"></script>
+  <script data-main="js/app" src="js/require.js"></script>
 </body>
 </html>
