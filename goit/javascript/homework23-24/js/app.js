@@ -1,25 +1,28 @@
-requirejs.config({
+requirejs.config ({
     paths: {
-        'jquery': 'https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery'
+	jquery: 'https://code.jquery.com/jquery-1.4.4.min',
+	tmpl: 'tmpl'
     },
     shim: {
-        'jquery': {
-            exports: 'jQuery'
-        }
+	jquery: {
+	    exports: 'jQuery'
+	},
+	tmpl: {
+	    exports: 'tmpl'
+	}
     }
 });
 
-require(
+require (
     [
-        'module1',
-        'module2',
-        'jquery'
+	'controller',
+	'view',
+	'model',
+	'tmpl',
+	'jquery'
     ],
-    function(module1, module2, $) {
-        console.log('$', $);
-        console.log('module1', module1);
-        console.log('module2', module2)
-        module1.sayHello();
-        module2.someMethod();
+    function (controller, view, model, tmpl, $) {
+	view.renderList(model.modelData);
+	controller.start();
     }
 );
