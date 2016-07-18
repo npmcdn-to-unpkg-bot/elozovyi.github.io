@@ -21,21 +21,21 @@ var path = {
         html: 'build/',
         js: 'build/js/',
         css: 'build/css/',
-        img: 'build/images/',
+        img: 'build/img/',
     },
 
     src: { // paths to source files
         html: 'src/*.html',
         js: 'src/js/app.js',
         scss: 'src/scss/app.scss',
-        img: 'src/images/**/*.*',
+        img: 'src/img/**/*.*',
     },
 
     watch: { // paths to modify files
         html: 'src/**/*.html',
         js: 'src/js/**/*.js',
         scss: 'src/scss/**/*.scss',
-        img: 'src/images/**/*.*',
+        img: 'src/img/**/*.*',
     },
 
     clean: './build'
@@ -50,7 +50,7 @@ var sassPaths = [
 var config = {
     server: {
         baseDir: "./build",
-        index: "demo.html"
+        index: "index.html"
     },
     //tunnel: 'port_framework_v1',
     host: 'localhost',
@@ -95,28 +95,28 @@ gulp.task('scss:build', function () { // <- task to build scss
         }))
         .pipe(cssmin())
         .pipe(sourcemaps.write())
-        .pipe(rename('port_framework_v1.css'))
+        .pipe(rename('main.css'))
         .pipe(gulp.dest(path.build.css))
         .pipe(reload({stream: true}));
 });
 
-//gulp.task('images:build', function () { // <- task to build images
-//     gulp.src(path.src.img)
-//        .pipe(imagemin({
-//            progressive: true,
-//            svgoPlugins: [{removeViewBox: false}],
-//            use: [pngquant()],
-//            interlaced: true
-//        }))
-//        .pipe(gulp.dest(path.build.img))
-//        .pipe(reload({stream: true}));
-//});
+gulp.task('images:build', function () { // <- task to build images
+    gulp.src(path.src.img)
+       .pipe(imagemin({
+           progressive: true,
+           svgoPlugins: [{removeViewBox: false}],
+           use: [pngquant()],
+           interlaced: true
+       }))
+       .pipe(gulp.dest(path.build.img))
+       .pipe(reload({stream: true}));
+});
 
 gulp.task('build', [
     'html:build',
     'js:build',
     'scss:build',
-    //'images:build'
+    'images:build'
 ]);
 
 gulp.task('watch', function(){
@@ -129,9 +129,9 @@ gulp.task('watch', function(){
     watch([path.watch.js], function(event, cb) {
         gulp.start('js:build');
     });
-    //watch([path.watch.img], function(event, cb) {
-    //    gulp.start('images:build');
-    //});
+    watch([path.watch.img], function(event, cb) {
+       gulp.start('images:build');
+    });
 });
 
 
