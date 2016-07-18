@@ -3,8 +3,11 @@
 @import "variables";
 
 .header {
+    width: 320px;
+    height: 550px;
     margin: 0 auto;
     background: url('../img/header_bg.jpg') top center no-repeat;
+    background-size: cover;
     .header__logo {
         margin: 0;
         font-family: $header-font;
