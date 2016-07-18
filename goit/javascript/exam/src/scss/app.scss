@@ -2,10 +2,18 @@
 @import "fonts";
 @import "variables";
 
+.wrapper {
+    width: 320px;
+    min-height: 100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .header {
     width: 320px;
     height: 550px;
     margin: 0 auto;
+    padding-top: 32px;
     background: url('../img/header_bg.jpg') top center no-repeat;
     background-size: cover;
     .header__logo {
@@ -13,25 +21,110 @@
         font-family: $header-font;
         font-weight: 700;
         font-size: 20px;
+        margin: 115px 0 40px 0;
         a {
             color: $header-color;
         }
     }
     .header__signup {
-        font-family: $header-font;
-        color: $header-color;
         display: inline-block;
-        li:last-child {
+        font-family: $header-font;
+        font-weight: 700;
+        font-size: 14px;
+        color: $header-color;
+        li {
+            display: inline-block;
+        }
+        li:first-child {
+            margin-right: 20px;
+        }
+        li:last-child a{
+            padding: 10px 17px 8px 17px;
+            border-radius: 20px;
             border: 2px solid #fff;
         }
+        a {
+            color: $header-color;
+        }
+    }
+    .header__text {
+        margin-bottom: 15px;
+        color: $header-color;
+        font-family: $header-font;
+        font-weight: 700;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    .header__text--little {
+        color: $header-color;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+    }
+    .header__button {
+        display: inline-block;
+        margin: 20px 0 138px 0;
+        padding: 14px 52px 12px 51px;
+        background-color: #ff4e50;
+        border-radius: 20px;
+        border: 1px solid #ff4e50;
+        color: $header-color;
+        font-family: $header-font;
+        font-weight: 700;
+        font-size: 14px;
     }
 }
 
-.wrapper {
+section {
     width: 320px;
     margin: 0 auto;
-    text-align: center;
+    background-color: #fff;
 }
+
+.sliders--mobile {
+    color: #333;
+    .sliders__text {
+        margin: 38px 0 15px 0;
+        font-family: $header-font;
+        font-size: 22px;
+    }
+    .slider {
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .slider1 {
+        width: 301px;
+        height: 240px;
+        background: url('../img/slide1_bg.jpg') top center no-repeat;
+        background-size: cover;
+
+    }
+    .slider2 {
+        width: 300px;
+        height: 240px;
+        background: url('../img/slide2_bg.jpg') top center no-repeat;
+        background-size: cover;
+
+    }
+    .slider3 {
+        width: 300px;
+        height: 240px;
+        background: url('../img/slide3_bg.jpg') top center no-repeat;
+        background-size: cover;
+
+    }
+}
+
+.partners {
+    margin-top: 29px;
+    .partners__text {
+        font-family: $header-font;
+        font-size: 22px;
+    }
+}
+
+
+
+
 
 // body {
 //   font-family: ubunturegular;
