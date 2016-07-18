@@ -67,10 +67,12 @@
         background-color: #ff4e50;
         border-radius: 20px;
         border: 1px solid #ff4e50;
-        color: $header-color;
         font-family: $header-font;
         font-weight: 700;
         font-size: 14px;
+        a {
+            color: $header-color;
+        }
     }
 }
 
@@ -82,9 +84,10 @@ section {
 
 .sliders--mobile {
     color: #333;
-    .sliders__text {
+    p {
         margin: 38px 0 15px 0;
         font-family: $header-font;
+        font-weight: 700;
         font-size: 22px;
     }
     .slider {
@@ -119,6 +122,34 @@ section {
     .partners__text {
         font-family: $header-font;
         font-size: 22px;
+        font-weight: 700;
+    }
+    p:first-child {
+        line-height: 2;
+    }
+    p:nth-child(2) {
+        margin-bottom: 15px;
+    }
+    .partner {
+        height: 200px;
+    }
+    .partner1 {
+        background: url('../img/partner1.jpg') top center no-repeat;
+    }
+    .partner2 {
+        background: url('../img/partner2.jpg') top center no-repeat;
+    }
+    .partner3 {
+        background: url('../img/partner3.jpg') top center no-repeat;
+    }
+    .partner4 {
+        background: url('../img/partner4.jpg') top center no-repeat;
+    }
+    .partner__name {
+        color: #333;
+        font-family: $header-font;
+        font-size: 14px;
+        font-weight: 700;
     }
 }
 
