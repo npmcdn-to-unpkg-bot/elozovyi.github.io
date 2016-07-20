@@ -1,6 +1,7 @@
 @import "reset";
 @import "fonts";
 @import "variables";
+@import "effects";
 
 .wrapper {
     min-width: 320px;
@@ -173,9 +174,17 @@ section {
             font-weight: 700;
         }
     }
+    .partner__button:hover {
+        background-image: -webkit-linear-gradient(top, #ffffff, #ffd1d1);
+        background-image: -moz-linear-gradient(top, #ffffff, #ffd1d1);
+        background-image: -ms-linear-gradient(top, #ffffff, #ffd1d1);
+        background-image: -o-linear-gradient(top, #ffffff, #ffd1d1);
+        background-image: linear-gradient(to bottom, #ffffff, #ffd1d1);
+    }
 }
 
 .discover {
+    width: 940px;
     padding-bottom: 40px;
     border-bottom: 4px solid #ff4e50;
     .discover__text {
@@ -193,14 +202,19 @@ section {
         color: #333;
     }
     .grid {
+        width: 940px;
     }
     .grid-item {
-        margin: 0 auto;
         width: 300px;
-        img {
-            width: 100%;
-            height: 120px;
-        }
+        height: 100px;
+        overflow: hidden;
+    }
+    .grid-item2 {
+        width: 300px;
+    }
+    .grid-item img,
+    .grid-item2 img {
+        width: 100%;
     }
     form {
         margin: 0 auto;
@@ -227,6 +241,7 @@ section {
             font-family: $header-font;
             font-size: 14px;
             font-weight: 700;
+            outline: 0;
         }
         .search__btn:hover {
             background-image: -webkit-linear-gradient(top, #ff787a, #ff2e31);
@@ -253,7 +268,7 @@ footer {
         }
     }
     .footer__menu--item {
-        margin-bottom: 20px;
+        margin: 0 15px 20px 0;
         display: inline-block;
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
@@ -276,6 +291,7 @@ footer {
     .designed {
         margin-top: 20px;
         .designed__text {
+            letter-spacing: 1px;
             font-family: $header-font;
             font-size: 10px;
             font-weight: 700;

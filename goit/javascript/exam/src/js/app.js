@@ -22,34 +22,49 @@ var allVars = $.getUrlVars();
 // Getting URL var by its nam
 var keyword = $.getUrlVar('s');
 
-if (keyword) {
-    $('.search_input').val(keyword);
-    search();
-}
+search();
+
+// if (keyword) {
+//     $('.search__input').val(keyword);
+//     search();
+// }
 
 function search() {
     var params = {
         // Request parameters
-        "tag": $('.search_input').val()
-    };
-
+        key: '2950071-0562fdd7db9a4f9ebb6702658',
+        order: 'latest',
+        min_width: 300,
+        min_height: 300,
+        pretty: true,
+        image_type: 'photo',
+        per_page: 7
+    },
+    keyword = $('.search__input').val();
+    if (keyword) {
+        params.query = keyword;
+    }
+    console.log(params);
     $.ajax({
-        url: "http://api.pixplorer.co.uk/image?word=" + $.param(params) + "&amount=5&size=tb",
+        url: 'https://pixabay.com/api/',
+        data: params,
         type: "GET"
     })
     .done(function(data) {
         console.log(data);
-        var results = data.images,
-            imageContainer = $('.grid');
+        var imageContainer = $('.grid');
         imageContainer.empty();
-        results.forEach(function(result) {
-            imageContainer.append('<div class="grid-item"><img src="' + result.imageurl + '"></div>');
+        data.hits.forEach(function(result, count) {
+            imageContainer.append('<div class="grid-item"><img src="' + result.webformatURL + '"></div>');
         });
+        imageContainer.find('.grid-item:nth-child(5)').addClass('grid-item2');
+        imageContainer.find('.grid-item:nth-child(6)').addClass('grid-item2');
         var $grid = $('.grid').imagesLoaded( function() {
           // init Masonry after all images have loaded
           $grid.masonry({
-              itemSelector: '.grid-item',
-              columnWidth: 200
+              itemSelector: '.grid-item'
+            //   ,
+            //   columnWidth: 200
           });
         });
     })
@@ -59,13 +74,13 @@ function search() {
 }
 
 $(function() {
-    $('.search_btn').click(search);
-    $('.search_input').keyup(function(e) {
-        var code = e.which;
-        if (code == 13) {
-            e.preventDefault();
-            search();
-        }
-    });
+    $('.search__btn').click(search);
+    // $('.search__input').keyup(function(e) {
+    //     var code = e.which;
+    //     if (code == 13) {
+    //         e.preventDefault();
+    //         search();
+    //     }
+    // });
 
 });
