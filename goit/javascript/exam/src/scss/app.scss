@@ -117,9 +117,6 @@ section {
     }
     .slider {
         display: inline-block;
-        margin: 0 auto;
-        margin-bottom: 10px;
-        border-radius: 3px;
         .slider__arrow {
             display: none;
         }
@@ -184,6 +181,26 @@ section {
         background-position: 0px -85px;
         background-size: cover;
     }
+}
+
+.jcarousel {
+    display: inline-block;
+    margin: 0 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+.jcarousel1 {
+    width: 301px;
+    height: 240px;
+}
+.jcarousel2 {
+    width: 300px;
+    height: 240px;
+}
+.jcarousel3 {
+    width: 300px;
+    height: 240px;
 }
 
 .partners {
@@ -277,6 +294,18 @@ section {
     .grid-item img,
     .grid-item2 img {
         width: 100%;
+    }
+    .grid-item--tag {
+        position: absolute;
+        width: 100%;
+        margin-top: 18%;
+        text-align: center;
+        font-family: $header-font;
+        font-size: 22px;
+        font-weight: 700;
+        color: #fff;
+        text-transform: capitalize;
+        text-shadow: 1px 1px #333;
     }
     form {
         margin: 0 auto;
@@ -416,16 +445,12 @@ footer {
             height: 410px;
         }
         .slider1 {
-            margin-left: 5px;
-            margin-right: 12px;
             background-position: -40px 0;
         }
         .slider2 {
-            margin-right: 12px;
             background-position: -40px 0;
         }
         .slider3 {
-            margin-right: 5px;
             background-position: -43px 0;
         }
         .slider {
@@ -449,6 +474,20 @@ footer {
                 margin-top: 260px;
             }
         }
+    }
+    .jcarousel {
+        width: 236px;
+        height: 410px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .jcarousel1 {
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+    .jcarousel3 {
+        margin-left: 20px;
+        margin-right: 10px;
     }
     .partners {
         .partners__text {
@@ -514,6 +553,12 @@ footer {
         }
         .grid-item2 img {
             min-width: 492px;
+        }
+        .grid-item--tag {
+            margin-top: 60%;
+        }
+        .grid-item--tag2 {
+            margin-top: 29%;
         }
         form {
             .search__input {
@@ -629,25 +674,37 @@ footer {
             }
         }
         .slider1 {
-            float: left;
             background-position: 0 0;
         }
         .slider3 {
-            float: right;
             background-position: 0 0;
-        }
-        .slider1,
-        .slider3 {
-            margin-right: 0;
-            margin-left: 0;
         }
         .slider2 {
-            margin-right: 0;
-            margin: 0 20px 0 20px;
             vertical-align: top;
             background-position: 0 0;
         }
     }
+
+    .jcarousel {
+        width: 300px;
+        height: 400px;
+    }
+    .jcarousel1 {
+        float: left;
+    }
+    .jcarousel3 {
+        float: right;
+    }
+    .jcarousel1,
+    .jcarousel3 {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .jcarousel2 {
+        margin-right: 0;
+        margin: 0 20px 0 20px;
+    }
+
     .discover {
         max-width: 940px;
         padding: 0;
@@ -673,6 +730,12 @@ footer {
         }
         .grid-item2 img {
             min-width: 620px;
+        }
+        .grid-item--tag {
+            margin-top: 50%;
+        }
+        .grid-item--tag2 {
+            margin-top: 24%;
         }
         .discover__text--second {
             margin-top: 76px;
