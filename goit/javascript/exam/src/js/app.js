@@ -38,38 +38,43 @@ function search() {
         min_height: 300,
         pretty: true,
         image_type: 'photo',
-        per_page: 7
+        per_page: 7,
+        q: ''
     },
     keyword = $('.search__input').val();
     if (keyword) {
         params.query = keyword;
     }
-    console.log(params);
     $.ajax({
         url: 'https://pixabay.com/api/',
         data: params,
         type: "GET"
     })
     .done(function(data) {
-        console.log(data);
+        //console.log(data);
         var imageContainer = $('.grid');
         imageContainer.empty();
         data.hits.forEach(function(result, count) {
-            imageContainer.append('<div class="grid-item"><img src="' + result.webformatURL + '"></div>');
+            if (count == 4 || count == 5) {
+                imageContainer.append('<div class="grid-item grid-item2"><img src="' + result.webformatURL + '"></div>');
+            }else {
+                imageContainer.append('<div class="grid-item"><img src="' + result.webformatURL + '"></div>');
+            }
+            //console.log(count);
         });
-        imageContainer.find('.grid-item:nth-child(5)').addClass('grid-item2');
-        imageContainer.find('.grid-item:nth-child(6)').addClass('grid-item2');
-        var $grid = $('.grid').imagesLoaded( function() {
+        //imageContainer.find('.grid-item:nth-child(5)').addClass('grid-item2');
+        //imageContainer.find('.grid-item:nth-child(6)').addClass('grid-item2');
+        imageContainer.imagesLoaded().progress( function() {
           // init Masonry after all images have loaded
-          $grid.masonry({
-              itemSelector: '.grid-item'
-            //   ,
-            //   columnWidth: 200
+         imageContainer.masonry({
+              itemSelector: '.grid-item',
+              columnWidth: '.grid-item',
+              gutter: 20
           });
         });
     })
-    .fail(function() {
-        alert("error");
+    .fail(function(error) {
+        console.log(error);
     });
 }
 
