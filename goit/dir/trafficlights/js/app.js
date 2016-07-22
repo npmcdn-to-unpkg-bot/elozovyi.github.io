@@ -27,10 +27,16 @@ console.log (button);
 console.log (light);
 button[0].onclick = function() {
     light[0].classList.add('red');
+    light[1].classList.remove('yellow');
+    light[2].classList.remove('green');
 }
 button[1].onclick = function() {
+    light[0].classList.remove('red');
     light[1].classList.add('yellow');
+    light[2].classList.remove('green');
 }
 button[2].onclick = function() {
+    light[0].classList.remove('red');
+    light[1].classList.remove('yellow');
     light[2].classList.add('green');
 }
