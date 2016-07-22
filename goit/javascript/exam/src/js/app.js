@@ -110,7 +110,6 @@ function search() {
 
 $(function() {
     $('.search__btn').click(function(){
-        console.log('ULLAHATANA!');
         $('.grid').masonry('destroy');
         search();
     });
@@ -118,7 +117,6 @@ $(function() {
         var code = e.which;
         if (code == 13) {
             e.preventDefault();
-            console.log('ULLAHATANA2222222!');
             $('.grid').masonry('destroy');
             search();
             return false;
