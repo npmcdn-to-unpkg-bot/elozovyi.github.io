@@ -40,3 +40,20 @@ button[2].onclick = function() {
     light[1].classList.remove('yellow');
     light[2].classList.add('green');
 }
+
+var trafficLights = function () {
+    if (light[0].classList.contains('red')) {
+        light[0].classList.remove('red');
+        light[1].classList.add('yellow');
+        light[2].classList.remove('green');
+    } else if (light[1].classList.contains('yellow')) {
+        light[1].classList.remove('yellow');
+        light[2].classList.add('green');
+    } else {
+        light[0].classList.add('red');
+        light[1].classList.remove('yellow');
+        light[2].classList.remove('green');
+    }
+}
+
+setInterval(trafficLights, 5000);
