@@ -185,9 +185,19 @@ section {
 
 .jcarousel {
     display: inline-block;
-    margin: 0 10px;
-    margin-bottom: 10px;
     border-radius: 3px;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.jcarousel__list {
+    position: relative;
+    width: 20000em;
+}
+.jcarousel__item {
+    float: left;
+    display: inline-block;
 }
 
 .jcarousel1 {
@@ -478,16 +488,10 @@ footer {
     .jcarousel {
         width: 236px;
         height: 410px;
-        margin-left: 0;
-        margin-right: 0;
     }
-    .jcarousel1 {
-        margin-left: 10px;
-        margin-right: 20px;
-    }
-    .jcarousel3 {
+    .jcarousel2 {
         margin-left: 20px;
-        margin-right: 10px;
+        margin-right: 20px;
     }
     .partners {
         .partners__text {
