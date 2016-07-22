@@ -56,4 +56,4 @@ var trafficLights = function () {
     }
 }
 
-setInterval(trafficLights, 5000);
+setInterval(trafficLights, 3000);
