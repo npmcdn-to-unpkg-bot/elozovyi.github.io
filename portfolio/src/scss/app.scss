@@ -1,0 +1,69 @@
+@import "reset";
+@import "fonts";
+@import "variables";
+@import "effects";
+@import "dropdown_menu";
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    width: 100%;
+}
+
+.wrapper {
+    max-width: 768px;
+    height: auto;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background: url('../img/header_bg.jpg') center center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    .large-header {
+    	position: relative;
+    	width: 100%;
+        max-height: 120px;
+    	background-size: cover;
+    	background-position: center center;
+    	z-index: 1;
+    }
+    canvas {
+        width: inherit;
+    }
+    .wrapp {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        color: #f9f1e9;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate3d(-50%,-50%,0);
+        transform: translate3d(-50%,-50%,0);
+    }
+    .content {
+        max-height: 120px;
+
+    }
+}
+
+main {
+    background-color: #e4f4f3;
+}
+
+// @media (min-width: 768px) {
+//     .wrapper {
+//         max-width: 768px
+//     }
+// }
+//
+// @media (min-width: 1440px) {
+//     .wrapper {
+//         max-width: 940px
+//     }
+// }
