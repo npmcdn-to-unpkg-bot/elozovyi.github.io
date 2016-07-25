@@ -94,7 +94,7 @@ Main Components
   transition: width 0.3s, transform 0.3s;
 }
 .cd-dropdown-trigger::before {
-  right: 16px;
+  right: 19px;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -102,7 +102,7 @@ Main Components
   transform: rotate(45deg);
 }
 .cd-dropdown-trigger::after {
-  right: 0px;
+  right: 3px;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
