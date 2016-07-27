@@ -49,56 +49,59 @@ header {
     .content {
         max-height: 120px;
     }
+    .desktop-menu {
+        display: none;
+    }
 }
 
 main {
     background-color: #e4f4f3;
     padding: 50px 20px;
-}
+    .button-toaction {
+        margin-bottom: 1px;
+        position: fixed;
+        left: 0;
+        top: 148.5px;
+        visibility: visible;
+        z-index: 999998;
+        .calltoaction {
+            max-width: 230px;
+            display: inline-block;
+            padding: 5px;
+            text-align: center;
+            background-color: #C08515;
+            color: #fff;
+            font-family: $menu-font;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 1.2;
+            text-transform: uppercase;
+            transition: background-color 0.3s;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            text-shadow: 1px 1px 5px #000;
+        }
 
-.button-toaction {
-    margin-bottom: 1px;
-    position: fixed;
-    left: 0;
-    top: 148.5px;
-    visibility: visible;
-    z-index: 999998;
-    .calltoaction {
-        max-width: 230px;
-        display: inline-block;
-        padding: 5px;
-        text-align: center;
-        background-color: #C08515;
-        color: #fff;
-        font-family: $menu-font;
-        font-size: 15px;
-        font-weight: 600;
-        line-height: 1.2;
-        text-transform: uppercase;
+        .calltoaction__logo {
+            display: inline-block;
+            width: 21px;
+            height: 30px;
+            background: url(../img/sprite.png) top right no-repeat;
+            background-position: -2px -751px;
+            transition: background-position 0.3s;
+        }
+    }
+    .button-toaction a:hover {
+        background-color: #7C5100;
         transition: background-color 0.3s;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-        text-shadow: 1px 1px 5px #000;
+        transition: background 0.3s;
+        .calltoaction__logo {
+            background-position: -2px -793px;
+            transition: background-position 0.3s;
+        }
     }
+}
 
-    .calltoaction__logo {
-        display: inline-block;
-        width: 21px;
-        height: 30px;
-        background: url(../img/sprite.png) top right no-repeat;
-        background-position: -2px -751px;
-        transition: background-position 0.3s;
-    }
-}
-.button-toaction a:hover {
-    background-color: #7C5100;
-    transition: background-color 0.3s;
-    transition: background 0.3s;
-    .calltoaction__logo {
-        background-position: -2px -793px;
-        transition: background-position 0.3s;
-    }
-}
 
 footer {
     height: 200px;
@@ -139,6 +142,30 @@ footer {
     .button-toaction {
         a.calltoaction {
             border-top-right-radius: 15px;
+        }
+    }
+}
+
+@media (min-width: 769px) {
+    header {
+        .desktop-menu {
+            display: block;
+            position: absolute;
+            top: 25px;
+            z-index: 999999;
+            .desktop-menu-content__item {
+                float: left;
+                margin-left: 15px;
+                a {
+                    font-family: $menu-font;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: $menu-color;
+                    letter-spacing: 1px;
+                    text-shadow: 1px 1px 5px #000;
+                }
+            }
         }
     }
 }
