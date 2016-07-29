@@ -167,7 +167,11 @@ main {
             left: 0;
             right: 0;
             bottom: 0;
-            padding: 1em;
+            padding: 1em 2em 1em 2em;
+            font-family: 'Lato', Tahoma, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+            text-align: center;
             color: white;
             line-height: 1.4;
             background: rgba(0, 0, 0, 0.75);
@@ -213,6 +217,16 @@ main {
             transform: translateX(0) translateY(0) translateZ(0);
         }
     }
+}
+
+.contacts {
+    background-color: #e4f4f3;
+    padding: 50px 30px;
+    color: #000;
+    line-height: 1.8;
+    font-family: Lato,Tahoma,Arial,sans-serif;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 
