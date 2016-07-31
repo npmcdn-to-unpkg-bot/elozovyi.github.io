@@ -111,11 +111,14 @@ main {
     }
     .portfolio-button {
         display: block;
-        width: 145px;
+        width: 207px;
         margin: 0 auto;
+        padding: 20px;
         color: #000;
         font-weight: 700;
-        padding: 20px;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
         .portfolio-arrow {
             width: 20px;
             height: 20px;
@@ -133,6 +136,7 @@ main {
         }
     }
     .about {
+        margin-bottom: 30px;
         .avatar {
             float: left;
             margin-right: 15px;
