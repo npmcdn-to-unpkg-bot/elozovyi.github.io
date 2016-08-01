@@ -65,6 +65,9 @@ main {
     color: #000;
     font-size: 15px;
     line-height: 1.8;
+    h1 {
+        color: #757575;
+    }
     .button-toaction {
         margin-bottom: 1px;
         position: fixed;
@@ -113,12 +116,11 @@ main {
         display: block;
         width: 207px;
         margin: 0 auto;
-        padding: 20px;
         color: #000;
         font-weight: 700;
         font-size: 18px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
+        text-align: center;
+        padding: 20px;
         .portfolio-arrow {
             width: 20px;
             height: 20px;
@@ -136,10 +138,40 @@ main {
         }
     }
     .about {
-        margin-bottom: 30px;
+        margin-top: 50px;
+        p {
+            margin-bottom: 20px;
+        }
         .avatar {
             float: left;
             margin-right: 15px;
+        }
+    }
+    .skills {
+        p {
+            color: #757575;
+            font-weight: 700;
+            font-size: 22px;
+            text-align: center;
+        }
+        span {
+            display: block;
+            color: #000;
+            text-align: center;
+        }
+        .development {
+            width: 50%;
+            float: left;
+            text-align: center;
+        }
+        .design {
+            width: 50%;
+            float: right;
+            text-align: center;
+        }
+        .skill {
+            display: inline-block;
+            margin: 10px;
         }
     }
 }
@@ -224,19 +256,81 @@ main {
 }
 
 .contacts {
-    background-color: #e4f4f3;
-    padding: 50px 30px;
+    float: left;
+    margin-left: 30px;
     color: #000;
     line-height: 1.8;
     font-family: Lato,Tahoma,Arial,sans-serif;
     font-size: 15px;
     font-weight: 400;
+    h2 {
+        font-size: 2em;
+        color: #757575;
+        margin-top: 0
+    }
+    .social-networks {
+        display: inline-block;
+        li {
+            margin-bottom: 1em;
+        }
+        li a {
+            padding-left: 60px;
+            line-height: 50px;
+            display: block;
+            height: 50px;
+            background: url('../img/sprite.png') no-repeat;
+            text-decoration: none;
+            font-size: 18px;
+            font-size: 1.8rem;
+            opacity: 1;
+            transition: opacity 0.3s;
+        }
+        li a:hover {
+            opacity: .7;
+            transition: opacity 0.3s;
+        }
+        .facebook {
+            background-position: 0px -547px;
+            color: #43609c;
+        }
+        .linkedin {
+            background-position: 0px -700px;
+            color: #0982c0;
+        }
+        .github {
+            background-position: 0px -649px;
+            color: #333;
+        }
+    }
 }
 
 
 footer {
-    padding: 50px 20px 20px 20px;
-    background-color: #166f72;
+    padding: 0 20px 20px 20px;
+    background-color: #8ecfcb;
+    border-top: 2px solid #669491;
+    .arrow-up {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        left: 0px;
+        a.top {
+            background: transparent url('../img/sprite.png') -2px -217px;
+            width: 118px;
+            height: 90px;
+            display: block;
+            position: absolute;
+            left: 50%;
+            margin-left: -59px;
+            bottom: 11px;
+            text-indent: -9999px;
+            transition: bottom 0.3s;
+        }
+        a.top:hover {
+            bottom: 15px;
+            transition: bottom 0.3s;
+        }
+    }
     .large-header {
     	position: relative;
     	width: 100%;
@@ -261,32 +355,94 @@ footer {
     }
     .content {
         max-height: 120px;
-
+    }
+    .desktop-menu {
+        display: block;
+        float: right;
+        .desktop-menu-content__item {
+            float: left;
+            line-height: 3;
+            text-align: left;
+            margin-right: 30px;
+            a {
+                font-family: $menu-font;
+                font-weight: 400;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: #0d766e;
+                letter-spacing: 1px;
+                font-size: 18px;
+                text-shadow: 1px 0px 1px #0d766e;
+            }
+            .menu-active {
+                color: #DEA53A;
+                text-shadow: 1px 0px 1px #000;
+            }
+        }
+        .desktop-menu-content__item:last-child {
+            a {
+                margin-top: 0;
+                padding: 0 12px;
+                color: #20ecbe;
+                background-color: #0D766E;
+                text-shadow: 1px 0px 1px #000;
+            }
+            a:hover {
+                background-color: #01625B;
+            }
+        }
     }
     hr {
         height: 1px;
         margin: 15px 0 10px 0;
         border: 0;
-        background-color: #01c6ae;
+        background-color: #669491;
     }
     .copyright {
         text-align: center;
-        color: #DEA53A;
+        color: #000;
         font-family: 'Proxima Nova Bold', Tahoma, Arial, sans-serif;
-        font-size: 12px;
+        font-size: 13px;
         letter-spacing: 1px;
         a {
             font-family: 'Proxima Nova Regular', Tahoma, Arial, sans-serif;
-            color: #fff;
+            color: #052f2c;
             text-decoration: none;
             line-height: 2;
+            transition: color 0.3s;
         }
         a:hover {
-            color: #b0ffee;
+            color: #fff;
+            transition: color 0.3s;
+
+        }
+    }
+}
+@media (min-width: 320px) and (max-width: 442px) {
+    main{
+        .about .avatar {
+            display: block;
+            float: none;
+            text-align: center;
+            margin-right: 0;
+            margin-left: 0;
+            margin: 0 auto;
+        }
+        .skills {
+            .development,
+            .design {
+                width: 100%;
+            }
         }
     }
 }
 
+@media (min-width: 320px) and (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+}
 
 @media (min-width: 768px) {
     .wrapper {

@@ -11,6 +11,10 @@ jQuery(document).ready(function($){
 		event.preventDefault();
 		toggleNav();
 	});
+	$('.has-children').on('click', function(event){
+		event.preventDefault();
+		toggleNav();
+	});
 
 	//on desktop - differentiate between a user trying to hover over a dropdown item vs trying to navigate into a submenu's contents
 	var submenuDirection = ( !$('.cd-dropdown-wrapper').hasClass('open-to-left') ) ? 'right' : 'left';
@@ -47,9 +51,11 @@ jQuery(document).ready(function($){
 	}
 });
 
-$('.portfolio-button').click(function(){
+$('.slow-button').click(function(){
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top
     }, 1000);
+	event.preventDefault();
+	toggleNav();
     return false;
 });

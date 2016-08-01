@@ -107,9 +107,17 @@ a {
 body {
   font-family: ubunturegular; }
 
+  .clearfix::after {
+      content: '';
+      display: block;
+      clear: both;
+      height: 0;
+      width: 100%;
+  }
+
 /* HEADER */
 .header {
-  width: 1160px;
+  max-width: 1160px;
   height: 73px;
   margin: 37px auto 0; }
 
@@ -452,7 +460,7 @@ body {
   background: #2a2d32; }
 
 .service__container {
-  width: 1160px;
+  max-width: 1160px;
   height: 500px;
   margin: 0 auto; }
 
