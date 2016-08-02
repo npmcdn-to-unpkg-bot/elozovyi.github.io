@@ -25,6 +25,37 @@ header {
     background: url('../img/header_bg.jpg') center center no-repeat;
     background-size: cover;
     overflow: hidden;
+    .logo {
+        display: inline-block;
+        margin-top: 10px;
+        margin-left: 10px;
+        z-index: 999999;
+        .logo__picture {
+            width: 62px;
+            height: 62px;
+            background: url("../img/sprite.png") -12px -5px no-repeat;
+            float: left;
+        }
+        .logo__text {
+            display: inline-block;
+            margin-left: 10px;
+            h1, h2 {
+                margin-top: 10px;
+                font-family: 'Lato', Tahoma, Arial, sans-serif;
+                color: #fff;
+                text-shadow: 1px 0 1px #000;
+            }
+            h1 {
+                font-weight: 700;
+                font-size: 17px;
+                text-transform: uppercase;
+            }
+            h2 {
+                font-weight: 500;
+                font-size: 15px;
+            }
+        }
+    }
     .large-header {
     	position: relative;
     	width: 100%;
@@ -43,7 +74,7 @@ header {
         padding: 0;
         color: #f9f1e9;
         text-align: center;
-        top: 50%;
+        top: 74%;
         left: 50%;
         -webkit-transform: translate3d(-50%,-50%,0);
         transform: translate3d(-50%,-50%,0);
@@ -58,8 +89,8 @@ header {
 }
 
 main {
-    background-color: #e4f4f3;
-    padding: 50px 30px;
+    background-color: #f2f8e6;
+    padding: 35px 30px 50px 30px;
     font-family: 'Lato', Tahoma, Arial, sans-serif;
     font-weight: 400;
     color: #000;
@@ -67,6 +98,7 @@ main {
     line-height: 1.8;
     h1 {
         color: #757575;
+        margin-top: 0;
     }
     .button-toaction {
         margin-bottom: 1px;
@@ -138,7 +170,11 @@ main {
         }
     }
     .about {
-        margin-top: 50px;
+        margin-top: 30px;
+        .about__link {
+            font-weight: 700;
+            font-size: 16px;
+        }
         p {
             margin-bottom: 20px;
         }
@@ -413,7 +449,13 @@ main {
 
 footer {
     padding: 0 20px 20px 20px;
-    background-color: #8ecfcb;
+    background: rgb(142,207,203);
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzhlY2ZjYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU4JSIgc3RvcC1jb2xvcj0iI2IwZThjMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijk5JSIgc3RvcC1jb2xvcj0iI2YxZjJiNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(top,  rgba(142,207,203,1) 0%, rgba(176,232,192,1) 58%, rgba(241,242,181,1) 99%);
+    background: -webkit-linear-gradient(top,  rgba(142,207,203,1) 0%,rgba(176,232,192,1) 58%,rgba(241,242,181,1) 99%);
+    background: linear-gradient(to bottom,  rgba(142,207,203,1) 0%,rgba(176,232,192,1) 58%,rgba(241,242,181,1) 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8ecfcb', endColorstr='#f1f2b5',GradientType=0 );
+
     border-top: 2px solid #669491;
     .arrow-up {
         position: relative;
@@ -533,6 +575,7 @@ footer {
             margin-right: 0;
             margin-left: 0;
             margin: 0 auto;
+            margin-bottom: 25px;
         }
         .skills {
             .development,
@@ -604,6 +647,10 @@ footer {
 
 @media (min-width: 769px) {
     header {
+        .logo {
+            margin-top: 25px;
+            margin-left: 20px;
+        }
         .desktop-menu {
             display: block;
             position: absolute;
@@ -623,7 +670,7 @@ footer {
                     color: #b0ffee;
                     letter-spacing: 1px;
                     text-shadow: 1px 0px 1px #000;
-                    font-size: 19px;
+                    font-size: 17px;
                 }
                 .menu-active {
                     color: #DEA53A;
@@ -653,6 +700,15 @@ footer {
     .featured-work {
         .grid-item {
             width: 25%;
+        }
+    }
+    header {
+        .desktop-menu {
+            .desktop-menu-content__item {
+                a {
+                    font-size: 19px;
+                }
+            }
         }
     }
 }

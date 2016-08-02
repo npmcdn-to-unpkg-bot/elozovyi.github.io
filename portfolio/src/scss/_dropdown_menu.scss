@@ -268,7 +268,7 @@ Main Components
     position: absolute;
     left: 50%;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 110px;
     /* reset style*/
     max-width: 280px;
     height: auto;
@@ -926,6 +926,19 @@ Main Components
 
 .no-js .cd-dropdown-wrapper .cd-close {
   display: none;
+}
+
+@media (min-width: 500px) {
+    header {
+        .container {
+            .wrapp {
+                top: 50%;
+            }
+        }
+    }
+    .cd-dropdown {
+      margin-top: 100px;
+    }
 }
 
 @media (min-width: 769px) {
