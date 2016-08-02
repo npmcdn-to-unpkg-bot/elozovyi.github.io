@@ -51,6 +51,7 @@ jQuery(document).ready(function($){
 	}
 });
 
+//slow scroll
 $('.slow-button').click(function(){
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top
@@ -59,3 +60,33 @@ $('.slow-button').click(function(){
 	toggleNav();
     return false;
 });
+
+
+//show modal
+$('.calltoaction').on('click', function(event) {
+ 	event.preventDefault();
+
+  		$('.overlay').fadeIn(400,
+  		  function() {
+  				$('.modal')
+  					.css('display', 'block')
+  					.animate({opacity: 1, top: '45%'}, 200);
+          $('.modal-close').css('display', 'block');
+
+		  $('.calltoaction-left')
+		  .animate({opacity: 0, top: '45%'}, 600);
+  		});
+
+    $('.modal-close, .overlay').click( function() {
+  		$('.modal')
+  			.animate( {
+          opacity: 0, top: '30%'}, 200,
+  				function() {
+  					$(this).css('display', 'none');
+  					$('.overlay').fadeOut(400);
+					
+					$('.calltoaction-left')
+					.animate({opacity: 1, top: '45%'}, 600);
+  		});
+  	});
+ })

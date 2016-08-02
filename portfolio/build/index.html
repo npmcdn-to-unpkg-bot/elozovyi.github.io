@@ -28,7 +28,7 @@
                                     <li class="desktop-menu-content__item"><a href="#about" class="desktop-menu-content__link hvr-grow hvr-underline slow-button">About</a></li>
                                     <li class="desktop-menu-content__item"><a href="#portfolio" class="desktop-menu-content__link menu-active hvr-grow hvr-grow-shadow slow-button">Portfolio</a></li>
                                     <li class="desktop-menu-content__item"><a href="#contacts" class="desktop-menu-content__link hvr-grow hvr-underline slow-button">Contacts</a></li>
-                                    <li class="desktop-menu-content__item"><a href="#" class="desktop-menu-content__link hvr-grow hvr-grow-shadow">Hire Eugen</a></li>
+                                    <li class="desktop-menu-content__item"><a href="#" class="calltoaction desktop-menu-content__link hvr-grow hvr-grow-shadow">Hire Eugen</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -44,7 +44,7 @@
                                 <li class="has-children"><a href="#about" class="slow-button">About</a></li>
                                 <li class="has-children"><a href="#portfolio" class="active slow-button">Portfolio</a></li>
                                 <li class="has-children"><a href="#contacts" class="slow-button">Contacts</a></li>
-                                <li class="has-children"><a href="#">Hire Eugen</a></li>
+                                <li class="has-children"><a href="#" class="calltoaction">Hire Eugen</a></li>
                             </ul>
                         </nav>
     			</div>
@@ -53,7 +53,7 @@
 
         <main class="main-content">
             <div class="button-toaction">
-                <a href="" class="calltoaction">
+                <a href="" class="calltoaction calltoaction-left">
                     <div class="calltoaction-wrap">
                         <div class="calltoaction__logo"></div>
                         <div class="calltoaction__text">H</div>
@@ -98,7 +98,7 @@
                         I can quickly and efficiently join your team using continuous-integration
                         with methods and tools such as Git, Jenkins, Agile. If you want to work with me or just say
                         "hey Eugen, what's up?" for no reason what so ever, send me an
-                        <a href="mailto:e.lozovyi@gmail.com">e-mail</a> or visit the <a href="#">hire page<a/>.
+                        <a href="mailto:e.lozovyi@gmail.com">e-mail</a> or visit the <a href="#" class="calltoaction">hire page<a/>.
                     </p>
                 </div>
 
@@ -123,11 +123,15 @@
                         </div>
                         <div class="skill">
                             <img src="img/node.png" alt="">
-                            <span>Node.js</span>
+                            <span>Node.js + npm</span>
                         </div>
                         <div class="skill">
                             <img src="img/gulp.png" alt="">
                             <span>Gulp</span>
+                        </div>
+                        <div class="skill">
+                            <img src="img/scss.png" alt="">
+                            <span>SCSS/SASS</span>
                         </div>
                         <div class="skill">
                             <img src="img/grunt.png" alt="">
@@ -155,6 +159,25 @@
                 <p class="portfolio-arrow"></p>
                 </a>
             </div>
+
+            <div class="hire">
+                <div class="modal">
+                    <div class="modal-close"></div>
+                    <form action="https://script.google.com/macros/s/AKfycbwNnjRQ-p4NIsLWVzmBmgcYIxwhcHiFCiqhi6A1XFm1HCb8UYQ/exec" method="POST" id="gform">
+                        <p>About you</p>
+                        Your name<span class="required">*</span><br>
+                        <input type="text" name="name" value="" class="form-text" required><br>
+                        E-mail address<span class="required">*</span><br>
+                        <input type="text" name="mail" value="" class="form-text"><br>
+                        Project Description<span class="required">*</span><br>
+                        <textarea name="description" class="form-text" cols="35" rows="5"></textarea><br>
+                        <input type="submit" value="Send" class="form-button">
+                        <input type="reset" value="Reset" class="form-button">
+                    </form>
+                </div>
+                <div class="overlay"></div>
+            </div>
+
         </main>
         <section class="featured-work" id="portfolio">
             <div class="grid clearfix">
@@ -240,7 +263,7 @@
                     <ul class="desktop-menu-content clearfix">
                         <li class="desktop-menu-content__item"><a href="#about" class="desktop-menu-content__link slow-button">About</a></li>
                         <li class="desktop-menu-content__item"><a href="#portfolio" class="desktop-menu-content__link menu-active slow-button">Portfolio</a></li>
-                        <li class="desktop-menu-content__item"><a href="#" class="desktop-menu-content__link hvr-grow hvr-grow-shadow">Hire Eugen</a></li>
+                        <li class="desktop-menu-content__item"><a href="#" class="calltoaction desktop-menu-content__link hvr-grow hvr-grow-shadow">Hire Eugen</a></li>
                     </ul>
                 </nav>
             </div>
