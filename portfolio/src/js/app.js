@@ -70,11 +70,11 @@ $('.calltoaction').on('click', function(event) {
   		  function() {
   				$('.modal')
   					.css('display', 'block')
-  					.animate({opacity: 1, top: '45%'}, 200);
+  					.animate({opacity: 1, top: '30%'}, 200);
           $('.modal-close').css('display', 'block');
 
 		  $('.calltoaction-left')
-		  .animate({opacity: 0, top: '45%'}, 600);
+		  .animate({opacity: 0}, 600);
   		});
 
     $('.modal-close, .overlay').click( function() {
@@ -84,9 +84,9 @@ $('.calltoaction').on('click', function(event) {
   				function() {
   					$(this).css('display', 'none');
   					$('.overlay').fadeOut(400);
-					
+
 					$('.calltoaction-left')
-					.animate({opacity: 1, top: '45%'}, 600);
+					.animate({opacity: 1}, 600);
   		});
   	});
  })
