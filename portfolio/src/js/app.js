@@ -70,7 +70,7 @@ $('.calltoaction').on('click', function(event) {
   		  function() {
   				$('.modal')
   					.css('display', 'block')
-  					.animate({opacity: 1, top: '30%'}, 200);
+  					.animate({opacity: 1, top: '25%'}, 200);
           $('.modal-close').css('display', 'block');
 
 		  $('.calltoaction-left')

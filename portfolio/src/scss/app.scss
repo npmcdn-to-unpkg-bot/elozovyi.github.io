@@ -177,13 +177,13 @@ main {
     .hire {
         .modal {
         	z-index: 2;
-        	position: absolute;
+        	position: fixed;
         	display: none;
         	top: 30%;
         	left: 52%;
         	width: 285px;
         	height: auto;
-        	padding: 35px 10px;
+        	padding: 15px 10px;
         	margin-top: -100px;
         	margin-left: -150px;
         	border-radius: 20px;
@@ -202,6 +202,10 @@ main {
                 }
             }
             .form-input,
+            .form-textarea {
+                width: 265px;
+            }
+            .form-input,
             .form-textarea,
             .form-button {
                 padding: 5px;
@@ -213,9 +217,9 @@ main {
                 margin-bottom: 15px;
             }
             .form-button {
+                padding: 6px 37px;
                 border: none;
                 border-radius: 4px;
-                padding: 6px 42px;
                 text-align: center;
                 cursor: pointer;
                 color: #fff;
