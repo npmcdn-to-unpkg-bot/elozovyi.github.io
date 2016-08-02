@@ -163,14 +163,14 @@
             <div class="hire">
                 <div class="modal">
                     <div class="modal-close"></div>
-                    <form action="https://script.google.com/macros/s/AKfycbwNnjRQ-p4NIsLWVzmBmgcYIxwhcHiFCiqhi6A1XFm1HCb8UYQ/exec" method="POST" id="gform" class="clearfix">
+                    <form id="gform" action="https://script.google.com/macros/s/AKfycbwNnjRQ-p4NIsLWVzmBmgcYIxwhcHiFCiqhi6A1XFm1HCb8UYQ/exec" method="POST" class="clearfix">
                         <p>About you</p>
                         Your name<span class="required">*</span><br>
-                        <input type="text" name="name" placeholder="e.g. Eugen Lozovyi" class="form-input" required><br>
-                        E-mail address<span class="required">*</span><br>
-                        <input type="text" name="mail" placeholder="e.g. hello@gmail.com" class="form-input" required><br>
+                        <input type="text" id="name"name="name" placeholder="e.g. Eugen Lozovyi" class="form-input" required><br>
+                        E-mail address<span class="required">*</span><span id="email-invalid" style="display: none;">Must be a valid email address</span><br>
+                        <input type="text" name="email" placeholder="e.g. hello@gmail.com" class="form-input" required><br>
                         Skype username<br>
-                        <input type="text" name="mail" placeholder="e.g. elena.nilsson45" class="form-input" required><br>
+                        <input type="text" name="skype" placeholder="e.g. elena.nilsson45" class="form-input"><br>
                         Project Description<span class="required">*</span><br>
                         <textarea name="description" class="form-textarea" rows="6" placeholder="Please briefly describe your project. E.g. what you aim to achieve, what you'd like me to do, your budget, ideal start date, and link to any appropriate materials (such as PSDs available via Dropbox)." required></textarea><br>
                         <input type="submit" value="Send" class="form-button btn1">
@@ -178,6 +178,10 @@
                     </form>
                 </div>
                 <div class="overlay"></div>
+            </div>
+
+            <div style="display:none;" id="thankyou_message">
+                <h2><em>Thanks</em> for contacting!</h2>
             </div>
 
         </main>
@@ -282,5 +286,6 @@
 		<script src="js/plugins/rAF.js"></script>
         <script src="js/app.js" charset="utf-8"></script>
         <script src="js/plugins/canvas.js"></script>
+        <script data-cfasync="false" type="text/javascript" src="js/plugins/form-submission-handler.js"></script>
     </body>
 </html>

@@ -200,6 +200,11 @@ main {
                 .required {
                     color: #da3941;
                 }
+                #email-invalid {
+                    float: right;
+                    color: #da3941;
+                    font-size: 11px;
+                }
             }
             .form-input,
             .form-textarea {
