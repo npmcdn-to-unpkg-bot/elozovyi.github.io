@@ -1,8 +1,8 @@
 jQuery(document).ready(function($){
 	//document location
-	var qwert = document.location.origin;
+	var docLocation = document.location.origin;
 	$("#og-img").attr({
-        "content" : qwert + "/img/frontend.jpg",
+        "content" : docLocation + "/build/img/frontend.jpg",
     });
 
 
