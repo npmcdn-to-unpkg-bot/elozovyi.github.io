@@ -2,7 +2,7 @@ jQuery(document).ready(function($){
 	//document location
 	var docLocation = document.location.origin;
 	$("#og-img").attr({
-        "content" : docLocation + "/build/img/frontend.jpg",
+        "content" : docLocation + "portfolio/build/img/frontend.jpg",
     });
 
 
