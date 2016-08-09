@@ -1,5 +1,12 @@
-//menu
 jQuery(document).ready(function($){
+	//document location
+	var qwert = document.location.origin;
+	$("#og-img").attr({
+        "content" : qwert + "/img/frontend.jpg",
+    });
+
+
+	//menu
 	//open/close mega-navigation
 	$('.cd-dropdown-trigger').on('click', function(event){
 		event.preventDefault();
