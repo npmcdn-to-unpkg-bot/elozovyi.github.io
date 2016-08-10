@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>freebie_ui_kit</title>
+        <link rel="stylesheet" href="css/main.css">
+
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__bg"></div>
+            <div class="wrapper clearfix">
+                <menu class="header__menu clearfix">
+                    <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Portfolio</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">About</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+                </menu>
+
+                <form action="" class="search clearfix" method="">
+                    <input class="search__input" type="text" name="s" placeholder="Search...">
+                    <input class="search__btn" type="button" name="btn" value="">
+                </form>
+
+                <section class="account clearfix">
+                    <div class="account__alert"><a href="#" class="account__link">4</a></div>
+                    <div class="account__message"><a href="#" class="account__link">14</a></div>
+                    <div class="account__profile"><a href="#" class="account__link--profile"></a></div>
+                </section>
+            </div>
+            <div class="header__line"></div>
+        </header>
+        <main>
+            <div class="wrapper clearfix">
+                <section class="switches">
+                    <label class="switch">
+                        <span class="slider__text">On</span>
+                        <span class="slider__text text-off">Off</span>
+                        <input type="checkbox" name="switch1" value="off">
+                        <div class="slider round"></div>
+                    </label>
+                    <label class="switch rectangular">
+                        <p class="slider__icon"></p>
+                        <input type="checkbox" name="switch1" value="off">
+                        <div class="slider"></div>
+                    </label><br>
+                    <label class="switch switch-on">
+                        <span class="slider__text">On</span>
+                        <span class="slider__text text-off">Off</span>
+                        <input type="checkbox" name="switch2" value="on" checked>
+                        <div class="slider round"></div>
+                    </label>
+                    <label class="switch switch-on rectangular">
+                        <p class="slider__icon"></p>
+                        <input type="checkbox" name="switch3" value="on" checked>
+                        <div class="slider"></div>
+                    </label>
+                </section>
+
+                <section class="checkboxes-radio">
+                        <!-- checkboxes -->
+                        <form action="#">
+                            <div>
+                                <input type="checkbox" id="check1">
+                                <label for="check1">Default</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="check2">
+                                <label for="check2" class="hovered">Hover</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="check3" checked>
+                                <label for="check3">Selected</label>
+                            </div>
+                        </form><br>
+                        <!-- radiobuttons -->
+                        <form action="#">
+                            <div>
+                                <input type="radio" id="radio1" name="radiobutton">
+                                <label for="radio1">Default</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="radio2" name="radiobutton">
+                                <label for="radio2" class="hovered">Hover</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="radio3" name="radiobutton" checked>
+                                <label for="radio3">Selected</label>
+                            </div>
+                        </form>
+                </section>
+
+                <section class="diagrams">
+                    <canvas id="diagram1" width="160" height="160"></canvas>
+                    <canvas id="diagram2" width="160" height="160"></canvas>
+                </section>
+
+                <section class="signup">
+                    <div class="signup__text">
+                        <p>Sign in</p>
+                    </div>
+                    <form action="#" class="signup__form">
+
+                    </form>
+                </section>
+            </div>
+        </main>
+
+
+
+        <script src="js/app.js" charset="utf-8"></script>
+    </body>
+</html>
