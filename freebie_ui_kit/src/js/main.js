@@ -38,3 +38,10 @@
         alert('Your browser does not support the HTML5 canvas tag');
     }
 })();
+
+//SELECT
+define(['styleselect'], function(styleSelect){
+  var log = console.log.bind(console);
+
+  styleSelect('select');
+})

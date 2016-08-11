@@ -11,17 +11,17 @@ a, label {
     color: $text-color;
 }
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #dedede;
+::-webkit-input-placeholder {
+    color: #dedede;
 }
-::-moz-placeholder { /* Firefox 19+ */
-  color: #dedede;
+::-moz-placeholder {
+    color: #dedede;
 }
-:-ms-input-placeholder { /* IE 10+ */
-  color: #dedede;
+:-ms-input-placeholder {
+    color: #dedede;
 }
-:-moz-placeholder { /* Firefox 18- */
-  color: #dedede;
+:-moz-placeholder {
+    color: #dedede;
 }
 
 .clearfix::after {
@@ -236,7 +236,7 @@ main {
 
     section.checkboxes-radio {
         float: left;
-        margin-right: 77px;
+        margin-right: 21px;
         form {
             display: inline-block;
             margin: 68px 0 46px 80px;
@@ -253,6 +253,7 @@ main {
         	cursor: pointer;
             font-size: 26px;
             font-weight: 400;
+            margin-right: 56px;
         }
         label:before {
         	content: " ";
@@ -301,19 +302,331 @@ main {
             margin-right: 81px;
         }
     }
+}
 
-    section.signup {
-        max-width: 454px;
-        max-height: 390px;
-        float: left;
-        .signup__text {
+section.signup {
+    max-width: 454px;
+    max-height: 390px;
+    float: left;
+    border: 1px solid #c7c6cb;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-right: 52px;
+    .signup__text {
+        background-color: #f6f5f6;
+        border-bottom: 1px solid #d6d6d6;
+        padding: 22px 315px 23px 38px;
+        p {
             text-transform: uppercase;
             font-size: 26px;
             font-weight: 700;
-            line-height: 96px;
             font-family: $font-family;
             color: $text-color;
-
         }
+    }
+    form {
+        padding: 38px 40px 50px 40px;
+    }
+    input[type=text],
+    input[type=password] {
+        width: 306px;
+        height: 64px;
+        padding-left: 68px;
+        background-color: white;
+        border: 1px solid #d5d5d5;
+        border-radius: 6px;
+        box-shadow: inset 0.7px 0.7px 3px rgba(0, 0, 0, 0.15);
+        outline: none;
+        font-family: $font-family;
+        font-size: 26px;
+        font-weight: 400;
+        color: #333;
+    }
+    input[type=text]:focus,
+    input[type=password]:focus {
+        border-color: #4e90c7;
+        font-family: $font-family;
+        font-size: 26px;
+        font-weight: 400;
+        color: #333;
+    }
+    input[type=text] {
+        background: url('../img/sprite.png') 10px -291px no-repeat;
+    }
+    input[type=password] {
+        margin: 20px 0 26px 0;
+        background: url('../img/sprite.png') 10px -352px no-repeat;
+    }
+    input[type=text]:focus {
+        background: url('../img/sprite.png') 10px -235px no-repeat;
+    }
+    input[type=password]:focus {
+        background: url('../img/sprite.png') 10px -409px no-repeat;
+    }
+
+    input.btn {
+        width: 180px;
+        height: 64px;
+        float: right;
+        background-color: #4e90c7;
+        border: none;
+        border-radius: 6px;
+        font-family: $font-family;
+        font-size: 30px;
+        font-weight: 600;
+        color: #fff;
+        outline: none;
+        cursor: pointer;
+        transition: background-color .5s;
+    }
+    input.btn:hover {
+        background-color: #2f71a9;
+        transition: .5s;
+    }
+
+    ::-webkit-input-placeholder {
+        font-family: $font-family;
+        font-size: 26px;
+        font-weight: 400;
+        color: #ccc;
+    }
+    ::-moz-placeholder {
+        font-family: $font-family;
+        font-size: 26px;
+        font-weight: 400;
+        color: #ccc;
+    }
+    :-ms-input-placeholder {
+        font-family: $font-family;
+        font-size: 26px;
+        font-weight: 400;
+        color: #ccc;
+    }
+    :-moz-placeholder {
+        font-family: $font-family;
+        font-size: 26px;
+        font-weight: 400;
+        color: #ccc;
+    }
+}
+
+section.calendar {
+    width: 472px;
+    height: 480px;
+    float: left;
+    background-color: #ccc;
+    border: 1px solid #c7c6cb;
+    border-radius: 3px;
+}
+
+section.controlls {
+    float: right;
+    padding: 68px 15px 0 15px;
+    .controller {
+        max-width: 454px;
+        max-height: 328px;
+        margin-bottom: 90px;
+        .line {
+            position: relative;
+            width: 454px;
+            height: 10px;
+            background-color: #ededed;
+            border-radius: 4px;
+        }
+        .line2 {
+            position: absolute;
+            left: 60px;
+            width: 290px;
+            height: 10px;
+            border-radius: 4px;
+            background-color: #a9cf55;
+        }
+        .point {
+            position: absolute;
+            top: -58px;
+            left: 93px;
+            width: 60px;
+            height: 40px;
+            background-color: #4e90c7;
+            border-radius: 6px;
+            p {
+                width: 26px;
+                height: 19px;
+                margin: 0 auto;
+                color: white;
+                font-family: $font-family;
+                font-size: 26px;
+                font-weight: 400;
+                line-height: 38px;
+                text-transform: uppercase;
+            }
+            div {
+                position: absolute;
+                top: 32px;
+                left: 17px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 14px 12px 0 12px;
+                border-color: #4e91c7 transparent transparent transparent;
+            }
+        }
+        .circle {
+            position: absolute;
+            top: -10px;
+            left: 108px;
+            width: 28px;
+            height: 28px;
+            background-color: #4e90c7;
+            border-radius: 50%;
+            z-index: 999;
+            cursor: pointer;
+            p {
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                margin: 0 auto;
+                margin: 8px;
+                text-align: center;
+                background-color: #fff;
+                border-radius: 50%;
+            }
+        }
+    }
+    .controller2 {
+        .circle {
+            left: 52px;
+            background-color: #a9cf55;
+        }
+        .circle2 {
+            left: 328px;
+        }
+        .numbers {
+            position: absolute;
+            width: 100%;
+            margin-top: 33px;
+            p {
+                margin-right: 84px;
+                float: left;
+                color: #777;
+                font-family: $font-family;
+                font-size: 22px;
+                font-weight: 600;
+            }
+            p:last-child {
+                margin-right: 0;
+                float: right;
+            }
+        }
+    }
+    .controller3 {
+        position: relative;
+        margin-top: 130px;
+        .circle {
+            background-color: #ffa940;
+            left: 298px;
+        }
+        p.percent {
+            position: absolute;
+            top: -8px;
+            color: #777;
+            font-family: $font-family;
+            font-size: 22px;
+            font-weight: 600;
+        }
+        p.percent:last-child {
+            right: -25px;
+        }
+        .line {
+            width: 380px;
+            margin: 0 auto;
+        }
+        .line2 {
+            width: 310px;
+            background-color: #ffa940;
+            left: 0;
+        }
+    }
+}
+
+section.select {
+    display: inline-block;
+    // Hide real select boxes which have seen styled.
+    select[data-ss-uuid] {
+    	display: none;
+    	pointer-events: none;
+    }
+
+    .style-select {
+    	display: block;
+    	position: relative;
+    	width: 140px; // Default width
+
+    	// Set reasonable defaults on this element and its children
+    	&, * {
+    		padding: 0;
+    		margin: 0;
+    		box-sizing: border-box;
+    		text-align: left;
+    		line-height: $line-height;
+    		color: black;
+    		font-weight: 300;
+    		cursor: pointer;
+    	}
+
+    	.ss-selected-option {
+    		width: 100%;
+    		background-image: $selected-option-background;
+    		border-radius: 2px;
+    		padding: $spacing-tiny;
+    		border: $standard-border;
+    		// The down arrow
+    		&::after {
+    			content: "▾";
+    			position: absolute;
+    			top: $spacing-tiny;
+    			right: $spacing-small;
+    			display: block;
+    		}
+    	}
+
+    	.ss-dropdown {
+    		top: $line-height + 2 * $spacing-tiny + $border-width;
+    		left: 0;
+    		position: absolute;
+    		float: left;
+    		width: 100%;
+    		display: none;
+    		box-shadow: $dropdown-shadow;
+    		border: $standard-border;
+    		border-top: 0 none;
+    		.ss-option {
+    			width: 100%;
+    			padding: $spacing-tiny;
+    			background-color: white;
+    			// We don't use :hover as that's only for mouse
+    			// and we want keyboard highlighting too
+    			&.highlighted {
+    				background-color: $highlight-color;
+    			}
+    			&.disabled {
+    				color: #d0d0d0;
+    			}
+    			&.ticked::before {
+    				content: "✓";
+    				padding-right: 3px;
+    			}
+    		}
+    	}
+
+    	&.open {
+    		.ss-dropdown {
+    			display: block;
+    		}
+    		.ss-selected-option::after {
+    			content: "▴";
+    		}
+    	}
+
     }
 }

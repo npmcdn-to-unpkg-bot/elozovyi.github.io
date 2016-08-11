@@ -95,21 +95,71 @@
                 <section class="diagrams">
                     <canvas id="diagram1" width="160" height="160"></canvas>
                     <canvas id="diagram2" width="160" height="160"></canvas>
-                </section>
-
-                <section class="signup">
-                    <div class="signup__text">
-                        <p>Sign in</p>
-                    </div>
-                    <form action="#" class="signup__form">
-
-                    </form>
-                </section>
+                </section><br>
             </div>
         </main>
 
+        <div class="wrapper clearfix">
+            <section class="signup">
+                <div class="signup__text">
+                    <p>Sign in</p>
+                </div>
+                <form action="#" class="signup__form clearfix">
+                    <input type="text" name="username" placeholder="Name"><br>
+                    <input type="password" name="psw" placeholder="Password"><br>
+                    <input type="button" name="login" value="log in" class="btn">
+                </form>
+            </section>
+
+            <section class="calendar">
+
+            </section>
+
+            <section class="controlls">
+                <div class="controller controller1">
+                    <div class="line">
+                        <div class="point"><p>30</p><div></div></div>
+                        <div class="circle"><p></p></div>
+                    </div>
+                </div>
+                <div class="controller controller2">
+                    <div class="line">
+                        <div class="circle"><p></p></div>
+                        <div class="line2"></div>
+                        <div class="circle circle2"><p></p></div>
+                        <div class="numbers clearfix">
+                            <p>0</p>
+                            <p>25</p>
+                            <p>50</p>
+                            <p>75</p>
+                            <p>100</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="controller controller3">
+                    <p class="percent">0%</p>
+                    <div class="line">
+                        <div class="circle"><p></p></div>
+                        <div class="line2"></div>
+                    </div>
+                    <p class="percent">100%</p>
+                </div>
+            </section>
+        </div>
+
+        <div class="wrapper">
+            <section class="select">
+                <select>
+                    <option value="value1">Label 1</option>
+                    <option value="value2" selected>Label 2</option>
+                    <option value="value3">Label 3</option>
+                    <option disabled value="value4">Label 4</option>
+                </select>
+            </section>
+        </div>
 
 
-        <script src="js/app.js" charset="utf-8"></script>
+        <!-- <script src="js/app.js" charset="utf-8"></script> -->
+        <script src="js/require.js" data-main="js/main"></script>
     </body>
 </html>
