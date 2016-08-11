@@ -178,12 +178,13 @@
 		realOptions.forEach(function(realOption, index){
 			var text = realOption.textContent,
 				value = realOption.getAttribute('value') || '',
-                cssClass = 'ss-option';
+                cssClass = 'ss-option',
+                text2 = 'Select Something';
 
 			if (index === selectedIndex) {
 				// Mark first item as selected-option - this is where we store state for the styled select box
 				// aria-hidden=true so screen readers ignore the styles selext box in favor of the real one (which is visible by default)
-				selectedOptionHTML = '<div class="ss-selected-option" tabindex="0" data-value="' + value + '">' + text + '</div>'
+				selectedOptionHTML = '<div class="ss-selected-option" tabindex="0" data-value="Select Something">' + text2 + '</div>'
 			}
 
             if (realOption.disabled) {
@@ -266,8 +267,6 @@
 			})
 		});
 
-
-
 		var closeAllStyleSelects = function(exception){
 			queryAll('.style-select').forEach(function(styleSelectEl) {
 				if ( styleSelectEl !== exception ) {
@@ -276,11 +275,15 @@
 			});
 		};
 
+        var selectGray = document.querySelectorAll('.ss-selected-option')[0];
 		var toggleStyledSelect = function(styledSelectBox){
 			if ( ! styledSelectBox.classList.contains('open') ) {
 				// If we're closed and about to open, close other style selects on the page
+                selectGray.classList.add('gray');
 				closeAllStyleSelects(styledSelectBox);
-			}
+			} else {
+                selectGray.classList.remove('gray');
+            }
 			// Then toggle open/close
 			styledSelectBox.classList.toggle('open');
 		};
@@ -354,6 +357,7 @@
 		})
 
 	};
+
 
 // Close UMD module
 }));

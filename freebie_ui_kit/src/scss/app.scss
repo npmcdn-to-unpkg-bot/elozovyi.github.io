@@ -304,14 +304,18 @@ main {
     }
 }
 
+.wrap {
+    float: left;
+}
+
 section.signup {
     max-width: 454px;
     max-height: 390px;
-    float: left;
     border: 1px solid #c7c6cb;
     border-radius: 6px;
     overflow: hidden;
     margin-right: 52px;
+    margin-bottom: 54px;
     .signup__text {
         background-color: #f6f5f6;
         border-bottom: 1px solid #d6d6d6;
@@ -413,8 +417,16 @@ section.signup {
 section.calendar {
     width: 472px;
     height: 480px;
-    float: left;
     background-color: #ccc;
+    border: 1px solid #c7c6cb;
+    border-radius: 3px;
+}
+
+section.profile {
+    width: 472px;
+    height: 260px;
+    margin-top: 32px;
+    margin-bottom: 50px;
     border: 1px solid #c7c6cb;
     border-radius: 3px;
 }
@@ -551,6 +563,7 @@ section.controlls {
 
 section.select {
     display: inline-block;
+    margin-bottom: 50px;
     // Hide real select boxes which have seen styled.
     select[data-ss-uuid] {
     	display: none;
@@ -560,12 +573,11 @@ section.select {
     .style-select {
     	display: block;
     	position: relative;
-    	width: 140px; // Default width
-
+        width: 454px;// Default width
+        margin-bottom: 16px;
     	// Set reasonable defaults on this element and its children
     	&, * {
     		padding: 0;
-    		margin: 0;
     		box-sizing: border-box;
     		text-align: left;
     		line-height: $line-height;
@@ -573,48 +585,67 @@ section.select {
     		font-weight: 300;
     		cursor: pointer;
     	}
-
     	.ss-selected-option {
     		width: 100%;
+            height: 64px;
+            padding-top: 20px;
+            padding-left: 18px;
     		background-image: $selected-option-background;
+            background-color: #f6f6f6;
     		border-radius: 2px;
-    		padding: $spacing-tiny;
+            color: #333;
+            font-family: $font-family;
+            font-size: 26px;
+            font-weight: 400;
     		border: $standard-border;
+            border-radius: 6px 6px 0 0;
+            outline: none;
     		// The down arrow
     		&::after {
-    			content: "▾";
+                width: 63px;
+                height: 64px;
+    			content: "";
+                background: url('../img/sprite.png') 11px -481px no-repeat;
     			position: absolute;
-    			top: $spacing-tiny;
+    			top: 13px;
     			right: $spacing-small;
     			display: block;
     		}
     	}
 
     	.ss-dropdown {
-    		top: $line-height + 2 * $spacing-tiny + $border-width;
+    		top: 63px;
     		left: 0;
     		position: absolute;
     		float: left;
     		width: 100%;
     		display: none;
-    		box-shadow: $dropdown-shadow;
-    		border: $standard-border;
     		border-top: 0 none;
+            border: 1px solid #c9c9c9;
+            // border-radius: 6px 6px 0 0;
+            box-shadow: 0 2px 7px rgba(0, 0, 0, 0.07);
     		.ss-option {
+                position: relative;
     			width: 100%;
-    			padding: $spacing-tiny;
+                height: 64px;
+    			padding-top: 20px;
+                padding-left: 18px;
     			background-color: white;
+                font-family: $font-family;
+                font-size: 26px;
+                font-weight: 400;
+                color: #777;
+
+
     			// We don't use :hover as that's only for mouse
     			// and we want keyboard highlighting too
     			&.highlighted {
-    				background-color: $highlight-color;
+    				background-color: #e5f2fd;
+                    color: #4e90c7;
+                    z-index: 9999;
     			}
     			&.disabled {
     				color: #d0d0d0;
-    			}
-    			&.ticked::before {
-    				content: "✓";
-    				padding-right: 3px;
     			}
     		}
     	}
@@ -624,9 +655,23 @@ section.select {
     			display: block;
     		}
     		.ss-selected-option::after {
-    			content: "▴";
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 63px;
+                height: 64px;
+                content: "";
+                background: url('../img/sprite.png') -66px -460px no-repeat;
+                background-color: #fff;
+                z-index: 999;
+                border-radius: 6px 6px 0 0;
+                box-shadow: 0 2px 7px rgba(0, 0, 0, 0.07);
+                border: 1px solid #d0d0d0;
+                border-bottom: 0;
     		}
     	}
-
+        .gray {
+            color: #c9c9c9;
+        }
     }
 }
