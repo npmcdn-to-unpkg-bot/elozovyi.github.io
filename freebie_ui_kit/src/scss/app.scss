@@ -307,6 +307,9 @@ main {
 .wrap {
     float: left;
 }
+.wrap-right {
+    float: right;
+}
 
 section.signup {
     max-width: 454px;
@@ -429,6 +432,83 @@ section.profile {
     margin-bottom: 50px;
     border: 1px solid #c7c6cb;
     border-radius: 3px;
+    overflow: hidden;
+    .profile__content {
+        .profile__logo {
+            float: left;
+            margin: 30px 0 28px 32px;
+            width: 136px;
+            height: 136px;
+            background: url('../img/sprite.png') -163px -111px no-repeat;
+        }
+        .profile__description {
+            display: inline-block;
+            max-width: 254px;
+            max-height: 122px;
+            float: right;
+            h1 {
+                font-weight: 400;
+                color: #333;
+                font-size: 36px;
+            }
+            p {
+                font-weight: 400;
+                color: #777;
+                font-size: 24px;
+            }
+        }
+    }
+    .profile__votes {
+        min-height: 172px;
+        .vote {
+            width: 157px;
+            height: 72px;
+            display: inline-block;
+            float: left;
+            a {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                span {
+                    display: block;
+                    width: 88px;
+                    height: 32px;
+                    margin: 0 auto;
+                    margin-top: 18px;
+                    padding-top: 2px;
+                    padding-left: 10px;
+                    text-align: right;
+                    color: white;
+                    font-family: $font-family;
+                    font-size: 28px;
+                    font-weight: 400;
+                }
+            }
+        }
+        .heart {
+            float: left;
+            background: #a9cf55;
+            span {
+                background: url('../img/sprite.png') -247px -250px no-repeat;
+            }
+        }
+        .friend {
+            float: left;
+            border-left: 1px solid #fff;
+            background: #ff7f68;
+            span {
+                background: url('../img/sprite.png') -247px -311px no-repeat;
+            }
+        }
+        .eye {
+            float: right;
+            width: 156px;
+            background: #4e90c7;
+            span {
+                background: url('../img/sprite.png') -247px -368px no-repeat;
+            }
+        }
+    }
 }
 
 section.controlls {
@@ -534,6 +614,7 @@ section.controlls {
     .controller3 {
         position: relative;
         margin-top: 130px;
+        margin-bottom: 78px;
         .circle {
             background-color: #ffa940;
             left: 298px;
@@ -559,6 +640,15 @@ section.controlls {
             left: 0;
         }
     }
+}
+
+.video {
+    display: inline-block;
+    border: 0 solid #000;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 section.select {
