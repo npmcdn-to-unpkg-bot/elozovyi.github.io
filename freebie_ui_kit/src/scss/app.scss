@@ -420,9 +420,95 @@ section.signup {
 section.calendar {
     width: 472px;
     height: 480px;
-    background-color: #ccc;
     border: 1px solid #c7c6cb;
     border-radius: 3px;
+    .month {
+        background-color: #f6f5f6;
+        border-bottom: 1px solid #d6d6d6;
+        .arrow-left {
+            width: 36px;
+            height: 36px;
+            margin: 14px 67px 14px 32px;
+            float: left;
+            background: url('../img/sprite.png') -257px -421px no-repeat;
+        }
+        .arrow-right {
+            width: 36px;
+            height: 36px;
+            margin: 14px 32px 14px 0;
+            float: right;
+            background: url('../img/sprite.png') -256px -482px no-repeat;
+        }
+        .month__name {
+            margin-top: 22px;
+            float: left;
+            color: #777;
+            font-family: $font-family;
+            font-size: 26px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+    .week {
+        border-bottom: 1px solid #c7c6cb;
+        padding: 24px 35px 22px 35px;
+        p {
+            display: inline-block;
+            float: left;
+            margin-right: 33px;
+            color: #777;
+            font-family: $font-family;
+            font-size: 24px;
+            font-weight: 400;
+        }
+        p:last-child {
+            margin-right: 0;
+        }
+    }
+    .days {
+        padding: 22px 0 24px 24px;
+        .day {
+            width: 50px;
+            height: 50px;
+            margin: 0 7px 10px 0;
+            display: inline-block;
+            color: #777;
+            font-family: $font-family;
+            font-size: 24px;
+            font-weight: 400;
+            text-align: center;
+            border: 1px solid #dbdbdb;
+            border-radius: 50%;
+            p {
+                padding-top: 13px;
+            }
+        }
+        .empty {
+            width: 52px;
+            height: 52px;
+            background-color: #f2f2f2;
+            border: none;
+            border-radius: 50%;
+        }
+        .red-line {
+            display: inline-block;
+            height: 52px;
+            background-color: #ff7f68;
+            border-radius: 25px;
+            margin-right: 7px;
+            .day {
+                border: 1px solid #ff7f68;
+                background-color: #ff7f68;
+                color: #fff;
+            }
+            .day-selected {
+                border: 1px solid #ff7f68;
+                background-color: #fff;
+                color: #ff7f68;
+                margin-right: 0;
+            }
+        }
+    }
 }
 
 section.profile {
