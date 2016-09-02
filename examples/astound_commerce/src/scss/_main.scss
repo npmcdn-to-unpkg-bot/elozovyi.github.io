@@ -1,0 +1,44 @@
+.products {
+    margin-top: 30px;
+    .products__item {
+        position: relative;
+        max-width: 280px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .products__link {
+        position: absolute;
+        bottom: 62px;
+        left: 0;
+        max-width: 280px;
+        max-height: 41px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .5);
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: #8ae6cf;
+    }
+    .products__description {
+        margin: 0 auto;
+        margin-top: 8px;
+        color: #282828;
+        font-family: 'Oswald', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 18px;
+        text-transform: uppercase;
+    }
+    .products__price {
+        color: #2c303d;
+        font-family: 'Oswald', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 33px;
+    }
+    .hot--price {
+        color: #ce2c52;
+    }
+}

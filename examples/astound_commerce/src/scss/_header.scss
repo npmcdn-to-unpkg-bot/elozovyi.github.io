@@ -1,0 +1,16 @@
+header {
+    .logo {
+        background: url('../img/header_bg.jpg');
+        .logo__text {
+            padding-top: 45px;
+            padding-bottom: 70px;
+            font-family: Tahoma, Arial, sans-serif;
+            font-weight: bold;
+            font-size: 60px;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 25px;
+            color: #eaf2f4;
+        }
+    }
+}

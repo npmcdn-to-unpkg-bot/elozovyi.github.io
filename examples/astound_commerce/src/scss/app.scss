@@ -1,0 +1,24 @@
+@import "reset";
+@import "fonts";
+@import "variables";
+@import "header";
+@import "main";
+@import "popup";
+
+// GENERAL. Mobile first
+body {
+    font-family: $font-family;
+}
+
+.wrapper {
+    max-width: 402px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    width: 100%;
+}
