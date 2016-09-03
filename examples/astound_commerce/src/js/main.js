@@ -13,6 +13,41 @@ var btn2 = document.getElementById("popup-btn2");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
+//Get social-networks--btn and social-networks
+var networksBtn = document.querySelectorAll('.social-networks--btn');
+var socialNet = document.querySelectorAll('.social-networks');
+
+//Get sizes__item
+var sizesItem = document.querySelectorAll('.sizes__item');
+
+//Display social networks icons
+networksBtn[0].onclick = function() {
+    if (socialNet[0].classList.contains('active')){
+        socialNet[0].classList.remove('active');
+        networksBtn[0].classList.remove('active-btn');
+    }else {
+        socialNet[0].classList.add('active');
+        networksBtn[0].classList.add('active-btn');
+    }
+}
+
+//Change sizes__item color onclick
+sizesItem.forEach(function(item){
+    item.onclick = function() {
+        // item.classList.add('sizes__item--active');
+
+        if (item.classList.contains('sizes__item--active')){
+            item.classList.remove('sizes__item--active');
+        }else {
+            var activeItem = document.getElementsByClassName('sizes__item--active')[0];
+            if (typeof activeItem !== 'undefined') {
+                activeItem.classList.remove('sizes__item--active');
+            }
+            item.classList.add('sizes__item--active');
+        }
+    }
+});
+
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
     modal.style.display = "block";
@@ -37,4 +72,5 @@ window.onclick = function(event) {
         modalContent.style.display = "none";
     }
 }
+
 })();
