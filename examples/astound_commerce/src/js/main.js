@@ -31,22 +31,38 @@ networksBtn[0].onclick = function() {
     }
 }
 
-//Change sizes__item color onclick
-sizesItem.forEach(function(item){
-    item.onclick = function() {
-        // item.classList.add('sizes__item--active');
 
-        if (item.classList.contains('sizes__item--active')){
-            item.classList.remove('sizes__item--active');
+//Change sizes__item color onclick
+for(var i = 0; i<sizesItem.length; i++) {
+    var item = sizesItem[i];
+    item.onclick = function() {
+        if (this.classList.contains('sizes__item--active')){
+            this.classList.remove('sizes__item--active');
         }else {
             var activeItem = document.getElementsByClassName('sizes__item--active')[0];
             if (typeof activeItem !== 'undefined') {
                 activeItem.classList.remove('sizes__item--active');
             }
-            item.classList.add('sizes__item--active');
+            this.classList.add('sizes__item--active');
         }
     }
-});
+}
+
+//Change sizes__item color onclick
+// sizesItem.forEach(function(item){
+//     item.onclick = function() {
+//         // item.classList.add('sizes__item--active');
+//         if (item.classList.contains('sizes__item--active')){
+//             item.classList.remove('sizes__item--active');
+//         }else {
+//             var activeItem = document.getElementsByClassName('sizes__item--active')[0];
+//             if (typeof activeItem !== 'undefined') {
+//                 activeItem.classList.remove('sizes__item--active');
+//             }
+//             item.classList.add('sizes__item--active');
+//         }
+//     }
+// });
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {

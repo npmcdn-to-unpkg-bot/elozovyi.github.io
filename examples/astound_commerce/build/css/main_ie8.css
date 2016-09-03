@@ -1,0 +1,92 @@
+/*General*/
+.wrapper {
+        max-width: 960px;
+        text-align: center;
+    }
+header {
+    display: none;
+}
+
+/*Main*/
+.products .products__link-desktop {
+  display: block;
+  opacity: 0;
+}
+.products .products__item:hover .products__link-desktop {
+  display: block;
+  opacity: 1;
+  transition: opacity .3s;
+}
+.products .products__item {
+  width: 33.33%;
+  max-width: 265px;
+}
+.products .products__item .products__link-mobile,
+.products .products__item .products__price {
+  display: none;
+}
+.products .products__item .products__link-desktop {
+  position: absolute;
+  bottom: 130px;
+  left: 20%;
+  max-width: 144px;
+  max-height: 29px;
+  width: 100%;
+  height: 100%;
+  background-color: #8ae6cf;
+  color: #2c303d;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+.products .products__item .products__price--desktop {
+  display: block;
+  position: absolute;
+  bottom: 56px;
+  right: 20px;
+  max-width: 148px;
+  max-height: 22px;
+  height: 100%;
+  background-color: #8ae6cf;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+.products .products__item .products__price--desktop .oldprice {
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+  text-decoration: line-through;
+  color: #2c303d;
+}
+.products .products__item .products__price--desktop .hot-price {
+  padding-right: 15px;
+  float: right;
+  color: #ce2c52;
+}
+.products .products__item .products__description {
+  font-size: 1rem;
+  margin-top: 18px;
+  margin-bottom: 22px;
+}
+.products .products__item:nth-child(2) .products__price--desktop .oldprice,
+.products .products__item:nth-child(3) .products__price--desktop .oldprice,
+.products .products__item:nth-child(5) .products__price--desktop .oldprice,
+.products .products__item:nth-child(6) .products__price--desktop .oldprice {
+  text-decoration: none;
+}
+.products .products__item:nth-child(even) .products__item-container {
+  margin-left: 0;
+}
+.products .products__item:nth-child(odd) .products__item-container {
+  margin-right: 0;
+}
+.products .products__item .products__item-container {
+  max-width: 245px;
+  padding-right: 20px;
+}
