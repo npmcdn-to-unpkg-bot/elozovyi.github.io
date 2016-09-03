@@ -14,3 +14,10 @@ header {
         }
     }
 }
+
+// Tablet & Desktop
+@media (min-width: 403px) {
+    header {
+        display: none;
+    }
+}
