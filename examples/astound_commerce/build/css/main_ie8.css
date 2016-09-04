@@ -183,6 +183,7 @@
 .modal__tablet .product-prewiew {
   max-width: 51.3vw;
   min-width: 262px;
+  float: left;
 }
 .modal__tablet .modal__price span {
   display: block;
