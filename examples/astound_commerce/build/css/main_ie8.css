@@ -83,6 +83,7 @@
     margin-left: 72px;
 }
 
+
 .modal__size .sizes .sizes__item a {
     padding-left: 11px;
 }
@@ -334,4 +335,33 @@
 
 .active-btn {
   background-position: -134px -145px;
+}
+
+/*for Ie9+*/
+@media (min-width: 320px) {
+    .modal__size .sizes .sizes__item:hover {
+        background-color: #2c2f3e;
+    }
+    .modal__size .sizes .sizes__item a:hover {
+        color: #fff;
+    }
+    .social-networks {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+    .modal__content {
+        position: absolute;
+        z-index: 2;
+        top: 180px;
+        left: 50%;
+        width: 100%;
+        background-color: #fff;
+        border: 1px solid #888;
+        transform: translateX(-50%);
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+    .products__price--desktop {
+        top: 195px;
+    }
 }
