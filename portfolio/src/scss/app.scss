@@ -627,7 +627,7 @@ footer {
     .featured-work {
         .grid-item {
             float: left;
-            width: 50%;
+            width: 25%;
             height: 300px;
         }
     }
@@ -678,6 +678,13 @@ footer {
                 }
             }
         }
+    }
+}
+
+@media (min-width: 560px) and (max-width: 1130px) {
+    .featured-work .grid-item {
+        width: 50%;
+        float: left;
     }
 }
 
