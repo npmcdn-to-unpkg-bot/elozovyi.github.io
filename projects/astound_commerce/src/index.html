@@ -12,16 +12,19 @@
     <body>
       <header>
           <div class="wrapper">
-              <div class="logo"><p class="logo__text">sale</p></div>
+              <div class="header_bg">
+                  <a href="#" class="logo__container"><img src="img/razer_logo.png" alt="" class="logo"></a>
+                  <p class="logo__text">sale</p>
+              </div>
           </div>
       </header>
       <main class="products">
           <div class="wrapper">
-              <div class="products__item">
+              <div class="products__item hvr-buzz-out">
                   <div class="products__item-container">
                       <img src="img/product1.jpg" alt="clothes" />
-                      <a href="#" class="products__link-mobile hvr-buzz-out" id="popup-btn">click to show more</a>
-                      <a href="#" class="products__link-desktop hvr-buzz-out" id="popup-btn2">show more</a>
+                      <a href="#" class="products__link-mobile" id="popup-btn">click to show more</a>
+                      <a href="#" class="products__link-desktop" id="popup-btn2">show more</a>
                       <p class="products__description">For gamers by gamers TEE</p>
                       <p class="products__price hot--price">$19.99</p>
                       <div class="products__price--desktop clearfix">
@@ -101,7 +104,7 @@
                   <fieldset class="rating">
                       <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="5 stars"></label>
                       <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="4 stars"></label>
-                      <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="3 stars"></label>
+                      <input type="radio" id="star3" name="rating" value="3" checked /><label class = "full" for="star3" title="3 stars"></label>
                       <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="2 stars"></label>
                       <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="1 star"></label>
                   </fieldset>
@@ -117,7 +120,7 @@
                       <fieldset class="rating">
                           <input type="radio" id="star_5" name="rating" value="5" /><label class = "full" for="star_5" title="5 stars"></label>
                           <input type="radio" id="star_4" name="rating" value="4" /><label class = "full" for="star_4" title="4 stars"></label>
-                          <input type="radio" id="star_3" name="rating" value="3" /><label class = "full" for="star_3" title="3 stars"></label>
+                          <input type="radio" id="star_3" name="rating" value="3" checked /><label class = "full" for="star_3" title="3 stars"></label>
                           <input type="radio" id="star_2" name="rating" value="2" /><label class = "full" for="star_2" title="2 stars"></label>
                           <input type="radio" id="star_1" name="rating" value="1" /><label class = "full" for="star_1" title="1 star"></label>
                       </fieldset>
@@ -136,7 +139,7 @@
                           <p class="modal__size-text desktop">size:</p>
                           <ul class="sizes clearfix">
                               <li class="sizes__item"><a href="#">XS</a></li>
-                              <li class="sizes__item"><a href="#">S</a></li>
+                              <li class="sizes__item sizes__item--active"><a href="#">S</a></li>
                               <li class="sizes__item"><a href="#">M</a></li>
                               <li class="sizes__item"><a href="#">L</a></li>
                           </ul>
@@ -169,7 +172,7 @@
                       <p class="modal__size-text">Select a size:</p>
                       <ul class="sizes clearfix">
                           <li class="sizes__item"><a href="#">XS</a></li>
-                          <li class="sizes__item"><a href="#">S</a></li>
+                          <li class="sizes__item sizes__item--active"><a href="#">S</a></li>
                           <li class="sizes__item"><a href="#">M</a></li>
                           <li class="sizes__item"><a href="#">L</a></li>
                       </ul>
@@ -177,8 +180,29 @@
                   </div>
               </div>
           </div>
-
       </main>
+
+      <footer>
+          <div class="wrapper clearfix">
+              <div class="footer__wrapp">
+                  <p class="footer__logo">For Gamers. By Gamers.™</p>
+                  <ul class="social-networks clearfix active">
+                      <li class="social-btn fb-ie8"><a href="#"></a></li>
+                      <li class="social-btn tw-ie8"><a href="#"></a></li>
+                      <li class="social-btn pin-ie8"><a href="#"></a></li>
+                      <li class="social-btn lin-ie8"><a href="#"></a></li>
+                      <li class="social-btn inst-ie8"><a href="#"></a></li>
+                  </ul>
+              </div>
+              <p class="footer__copyright">Copyright ©2016 Razer Inc. All rights reserved.</p>
+              <p class="footer__description">Copyright © 2016 Razer Inc. All rights reserved.
+                  Razer and the triple-headed snake logo are trademarks or registered trademarks
+                  of Razer Inc. and/or affiliated companies in the United States or other countries.
+                  All other trademarks are the property of their respective owners. Actual product may
+                  differ from product renderings.</p>
+          </div>
+      </footer>
+      
       <!--[if IE 8]>
           <script src="js/main_ie8.js"></script>
       <![endif]-->

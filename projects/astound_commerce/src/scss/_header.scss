@@ -1,0 +1,35 @@
+header {
+    background-color: #000;
+    .header_bg {
+        background: url('../img/header_bg.jpg') 0 0 no-repeat;
+        background-size: cover;
+        .logo__container {
+            float: left;
+            padding-top: 20px;
+            padding-left: 20px;
+            .logo {
+                width: 100%;
+                height: auto;
+                max-width: 230px;
+            }
+        }
+        .logo__text {
+            padding-top: 90px;
+            padding-bottom: 90px;
+            font-family: Tahoma, Arial, sans-serif;
+            font-weight: bold;
+            font-size: 48px;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 7vw;
+            color: #eaf2f4;
+        }
+    }
+}
+
+// Tablet & Desktop
+@media (min-width: 960px) {
+    header .header_bg .logo__text {
+        letter-spacing: 4vw;
+    }
+}
