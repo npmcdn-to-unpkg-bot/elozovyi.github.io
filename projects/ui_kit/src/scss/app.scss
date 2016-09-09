@@ -33,9 +33,11 @@ a, label {
 }
 
 .wrapper {
+    margin: 0 auto;
     height: auto;
     max-width: 1520px;
-    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 header {
@@ -45,7 +47,7 @@ header {
         background: url('../img/header_bg.jpg') top center no-repeat;
     }
     .header__menu {
-        margin: 43px 0 39px 0;
+        margin-top: 43px;
         float: left;
         list-style: none;
         .menu__item {
@@ -57,17 +59,21 @@ header {
                 line-height: 48px;
             }
         }
+        .menu__item:last-child {
+            margin-right: 0;
+        }
     }
     form.search {
+        width: 100%;
         max-width: 460px;
         max-height: 70px;
-        margin: 22px 0 0 4px;
+        margin: 22px 50px 0 30px;
         float: left;
         background-color: #fff;
         border: 1px solid #d5d5d5;
         border-radius: 4px;
         .search__input {
-            margin: 15px 56px 15px 18px;
+            margin: 15px 0 15px 18px;
             float: left;
             border: none;
             font-family: $font-family;
@@ -90,7 +96,6 @@ header {
     }
     section.account {
         margin-top: 20px;
-        margin-left: 57px;
         float: left;
         .account__alert {
             position: relative;
@@ -142,6 +147,7 @@ header {
         width: 100%;
         height: 1px;
         background-color: #e5e5e5;
+        margin-top: 39px;
     }
 }
 
@@ -307,8 +313,8 @@ main {
 .wrap {
     float: left;
 }
-.wrap-right {
-    float: right;
+.wrap-middle {
+    margin-right: 20px;
 }
 
 section.signup {
@@ -317,7 +323,7 @@ section.signup {
     border: 1px solid #c7c6cb;
     border-radius: 6px;
     overflow: hidden;
-    margin-right: 52px;
+    margin-right: 20px;
     margin-bottom: 54px;
     .signup__text {
         background-color: #f6f5f6;
