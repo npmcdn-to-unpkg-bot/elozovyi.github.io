@@ -1,0 +1,34 @@
+.deposit
+  height: $deposit-height
+  width: 100%
+  background-color: $block-bg-color
+  margin:
+    bottom: $deposit-margin-bottom
+  border: $border
+  border-radius: $border-radius
+  //line-height: $deposit-line-height
+  //padding: $deposit-padding
+  float: left
+  &:before
+    content: ''
+    display: block
+    position: relative
+    height: 20px
+    width: 100%
+    border-radius: 0% 0% 50% 50%
+    background-color: #fafafa
+  &__title
+    float: left
+    color: $deposit-font-color
+    padding:
+      left: 20px
+    font:
+      size: $deposit-font-size
+      weight: $deposit-font-weight
+    text-transform: $deposit-font-transform
+    z-index: 5
+  &__icon
+    display: inline-block
+    float: right
+    margin:
+      right: 20px

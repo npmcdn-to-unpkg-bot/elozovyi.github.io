@@ -1,0 +1,17 @@
+// Base styles
+
+.clearfix {
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+  width: 100%;
+}
+
+.layout-center {
+  max-width: 996px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 996px;
+  height: 100%;
+}

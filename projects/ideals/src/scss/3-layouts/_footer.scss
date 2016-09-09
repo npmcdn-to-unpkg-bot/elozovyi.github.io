@@ -1,0 +1,29 @@
+.page-footer {
+  background-color: #f7f7f7;
+}
+
+.footer-bot {
+  background-color: #eaeaea;
+  color: #cecece;
+  height: 105px;
+  padding-top: 10px;
+  line-height: 105px;
+  &__text {
+    display: block;
+    max-width: 795px;
+    float: left;
+    line-height: 15px;
+    margin-top: 28px;
+    font-family: 'open_sansregular';
+  }
+  &__author {
+    float: left;
+    margin-right: 25px;
+  }
+  &__logo {
+    float: left;
+    display: block;
+    margin-top: 30px;
+    margin-right: 65px;
+  }
+}

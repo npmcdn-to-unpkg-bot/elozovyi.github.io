@@ -1,0 +1,73 @@
+$main-font: 'opensans';
+$main-font-size: 11px;
+//$main-font-size: 0.7em;
+$main-font-color: #000;
+
+// HEADER TOP
+$header-top-font-color: #9b9b9b;
+$header-top-font-size: 11px;
+$header-top-line-height: 31px;
+
+// PAGE-HEADER
+$page-header-height: 88px;
+$page-header-line-height: 96px;
+$page-header-top-color: #ffde89; // linear gradient top
+$page-header-bottom-color: #f8ad14; // linear gradient bottom
+$page-header-padding-top: 0px;
+
+// SITE MENU
+$site-menu-bg-color: #323232;
+$site-menu__list-height: 33px;
+$site-menu-border: 1px solid #8f8f8f;
+$site-menu-line-height: 33px;
+$site-menu__item-hover-color: #323232;
+$site-menu__link-color: #FFF;
+$site-menu__link-font-size: 12px;
+$site-menu__link-font-weight: 400;
+$site-menu__link-font-transform: capitalize;
+$site-menu__link-font-decoration: none;
+$site-menu__link__padding-right: 15px;
+$site-menu__link__padding-left: 15px;
+
+// LOGO
+$logo-width: 575px;
+$logo-font-family: 'uni_sansheavy_caps';
+$logo-font-color: #3c3c3c;
+$logo-font-size: 38px;
+$logo-font-style: italic;
+$logo-text-decoration: none;
+$logo-margin-left: 15px;
+
+// BORDER
+$border: 1px solid #d8d8d8;
+$border-radius: 2px;
+
+// METHOD
+$method-width: 234px;
+$method-padding: 20px 14px 20px 20px;
+
+// BLOCKS
+$block-bg-color: #eeeeee;
+
+// DEPOSIT
+$deposit-height: 50px;
+$deposit-margin-bottom: 15px;
+$deposit-line-height: 50px;
+$deposit-padding: 0px 20px;
+$deposit-font-color: #484848;
+$deposit-font-size: 16px;
+$deposit-font-weight: 600;
+$deposit-font-transform: capitalize;
+
+// INFO
+$info-font-color: #333333;
+$info-width: 419px;
+$info-padding: 30px;
+
+// FOOTER
+$footer-bg-color: #f7f7f7;
+
+// FOOTER MENU
+$footer-menu-font-color: #333333;
+$footer-menu-font-size: $main-font-size;
+$footer-menu-font-weight: 600;
