@@ -3,6 +3,7 @@ var gulp = require('gulp'),
     watch = require('gulp-watch'),
     prefixer = require('gulp-autoprefixer'),
     uglify = require('gulp-uglify'),
+    jade = require('gulp-jade'),
     sass = require('gulp-sass'),
     postcss = require('gulp-postcss'),
     autoprefixer = require('autoprefixer'),
@@ -86,6 +87,23 @@ gulp.task('js:build', function () { // <- task to build js
         .pipe(reload({stream: true}));
 });
 
+gulp.task('jade:build', function() {
+  return [
+    gulp.src('./src/index.jade')
+        .pipe(jade({
+          pretty: true
+        }))
+        .pipe(gulp.dest('./build/')),
+    gulp.src('./src/templates/*/**')
+      .pipe(jade({
+        pretty: true
+      }))
+      .pipe(gulp.dest('./build/templates/')),
+
+    gulp.src(['./src/index.jade','./src/templates/*/**']).pipe(connect.reload())
+  ];
+});
+
 gulp.task('scss:build', function () { // <- task to build scss
     var plugins = [
       autoprefixer({browsers: ['last 2 versions']}),
@@ -126,6 +144,7 @@ gulp.task('images:build', function () { // <- task to build images
 gulp.task('build', [
     'html:build',
     'js:build',
+    'jade:build',
     'scss:build',
     'images:build'
 ]);
