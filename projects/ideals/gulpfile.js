@@ -37,8 +37,10 @@ var path = {
 
     watch: { // paths to modify files
         html: 'src/**/*.html',
+        jade: 'src/templates/**/*.*',
+        jadeIndex: 'src/index.jade',
         js: 'src/js/**/*.js',
-        scss: 'src/scss/**/*.scss',
+        scss: 'src/scss/**/*.*',
         img: 'src/img/**/*.*',
     },
 
@@ -93,12 +95,15 @@ gulp.task('jade:build', function() {
         .pipe(jade({
           pretty: true
         }))
-        .pipe(gulp.dest('./build/')),
+        .pipe(gulp.dest('./build/'))
+        .pipe(reload({stream: true})),
+
     gulp.src('./src/templates/*/**')
       .pipe(jade({
         pretty: true
       }))
-      .pipe(gulp.dest('./build/templates/')),
+      .pipe(gulp.dest('./build/templates/'))
+      .pipe(reload({stream: true})),
 
     gulp.src(['./src/index.jade','./src/templates/*/**']).pipe(connect.reload())
   ];
@@ -152,6 +157,12 @@ gulp.task('build', [
 gulp.task('watch', function(){
     watch([path.watch.html], function(event, cb) {
         gulp.start('html:build');
+    });
+    watch([path.watch.jade], function(event, cb) {
+        gulp.start('jade:build');
+    });
+    watch([path.watch.jadeIndex], function(event, cb) {
+        gulp.start('jade:build');
     });
     watch([path.watch.scss], function(event, cb) {
         gulp.start('scss:build');
