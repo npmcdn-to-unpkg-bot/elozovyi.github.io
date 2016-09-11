@@ -119,9 +119,9 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .icon-ppl {
   background-image: url(../img/sprite.png);
-  background-position: -63px -95px;
-  width: 51px;
-  height: 41px;
+  background-position: 0 -150px;
+  width: 117px;
+  height: 49px;
 }
 .icon-settings {
   background-image: url(../img/sprite.png);
